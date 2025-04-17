@@ -80,7 +80,44 @@ $urls = array(
 
 //'https://www.jstor.org/stable/24861908',
 
-'https://oulurepo.oulu.fi/handle/10024/43702',
+//'https://oulurepo.oulu.fi/handle/10024/43702',
+
+//'https://www.kmae-journal.org/articles/kmae/abs/2020/01/kmae190147/kmae190147.html',
+
+//'https://www.biotaxa.org/Zootaxa/article/view/zootaxa.4109.3.7/20444',
+//'https://shilap.org/revista/article/view/651',
+
+//'https://revistas.zamorano.edu/CEIBA/article/download/1224/1167',
+
+//'https://link.springer.com/article/10.1007/s43236-024-00799-0',
+
+//'https://www.scielo.org.mx/scielo.php?pid=S2007-42982024000100026&amp;script=sci_arttext',
+//'https://www.scielo.org.mx/scielo.php?pid=S2007-42982024000100026&script=sci_arttext',
+
+//'https://www.biotaxa.org/AEMNP/article/view/60813', // PDF link broken, actual PDF has DOI
+
+//'https://hal.science/hal-02883398/',
+
+//'https://atrium.lib.uoguelph.ca/bitstreams/4f62fcab-b435-4cbe-ae4f-28cfd81e86f2/download', // pdf
+//'https://atrium.lib.uoguelph.ca/items/e6d1649f-b335-4652-93fb-f93ce62c7a5b',
+
+//'http://colposdigital.colpos.mx:8080/jspui/handle/10521/4356',
+
+//'http://revistaecosistemas.net/index.php/ecosistemas/article/view/1179', // failed but article exists
+//'http://ojs3.uefs.br/index.php/sociobiology/article/view/1044',
+
+//'https://dialnet.unirioja.es/servlet/articulo?codigo=9024079', // NO DOI on site, but link to PDF with DOI
+//'https://doi.org/10.57065/shilap.462',
+
+//'https://atrium.lib.uoguelph.ca/items/dbb9131f-faac-440f-893c-45d34b373e41',
+
+//'https://repositorio.uasb.edu.ec/handle/10644/9873',
+//'https://oulurepo.oulu.fi/handle/10024/43702',
+//'https://repositorium.uminho.pt/handle/1822/90956',
+
+'https://www.biorxiv.org/content/10.1101/2024.01.25.577180.abstract',
+
+'https://contributions-to-entomology.arphahub.com/article_preview.php?id=127094',
 
 );
 
@@ -105,7 +142,13 @@ foreach ($urls as $url)
 		if ($dom)
 		{	
 			$source = new stdclass;
+			$source->type = 'work';
 			$source->url = $url;
+			
+			if (preg_match('/handle\/(\d+\/\d+)/', $url, $m))
+			{
+				$source->handle = $m[1];
+			}
 				
 			// meta
 			foreach ($dom->find('meta') as $meta)
@@ -143,6 +186,13 @@ foreach ($urls as $url)
 						$source->pdf = str_replace('inrae.r', 'inrae.fr', $source->pdf);
 						break;
 						
+					case 'citation_abstract_html_url':
+						if (preg_match('/https?:\/\/(hdl\.)?handle.net\/(?<handle>.*)/', $meta->content, $m))
+						{
+							$source->handle = $m['handle'];
+						}
+						break;
+						
 					case 'dc.Identifier': // TandF untested
 						if (preg_match('/(https?:\/\/(dx\.)?doi.org\/)?(?<doi>10\.\d+.*)/', $meta->content, $m))
 						{
@@ -169,8 +219,8 @@ foreach ($urls as $url)
 						{
 							if (!isset($source->doi))
 							{
-								$source->doi = $m['doi'];
-								$source->preprint = true;
+								$source->related_doi = $m['doi'];
+								$source->type = 'preprint';
 							}
 						}
 						break;	
@@ -179,6 +229,22 @@ foreach ($urls as $url)
 						if (preg_match('/\.pdf$/', $meta->content))
 						{
 							$source->pdf = $meta->content;
+						}
+						break;
+						
+					case 'citation_dissertation_name':
+					case 'citation_dissertation_institution':
+						$source->type = 'thesis';
+						break;
+						
+					case 'DC.type':
+						if ($meta->content == 'masterThesis')
+						{
+							$source->type = 'thesis';
+						}
+						if ($meta->content == 'doctoralThesis')
+						{
+							$source->type = 'thesis';
 						}
 						break;
 																		
