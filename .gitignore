@@ -1,1 +1,7 @@
 .DS_Store
+
+/html/
+/html-title/
+/json/
+boldcite.db-shm
+boldcite.db-wal

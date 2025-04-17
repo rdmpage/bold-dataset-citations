@@ -5,16 +5,19 @@ require_once(dirname(__FILE__) . '/sqlite.php');
 require_once(dirname(__FILE__) . '/HtmlDomParser.php');
 use Sunra\PhpSimple\HtmlDomParser;
 
-$basedir = 'html';
+$basedir = 'html-title';
 
 $files = scandir($basedir);
 
-//$files = array('ds-260324.html');
-//$files = array('ds-ffliesrc.html');
-//$files = array('ds-goncolom.html');
-//$files = array('ds-adelo1.html');
+$files = array('ds-260324.html');
+$files = array('ds-ffliesrc.html');
+$files = array('ds-goncolom.html');
+$files = array('ds-adelo1.html');
 //$files = array('ds-afropict.html');
-//$files = array('DS-CATCH.html');
+
+//$files = array('ds-ctenscia.html');
+//$files = array('ds-agromit.html');
+$files = array('ds-bolma.html');
 
 foreach ($files as $filename)
 {
@@ -30,11 +33,14 @@ foreach ($files as $filename)
 		
 		if ($dom)
 		{	
-			foreach ($dom->find('div[class=gs_r gs_or gs_scl]') as $gs)
+			$pattern = 'gs_r gs_or gs_scl gs_fmar';
+			$pattern = 'gs_r gs_or gs_scl';
+			
+			foreach ($dom->find('div[class=' . $pattern . ']') as $gs)
 			{
 				$citation = new stdclass;
 
-				$citation->source = 'googleScholar';
+				$citation->source = 'googleScholarTitle';
 				
 				$citation->dataset_id = strtoupper(str_replace('.html', '', $filename));				
 				
