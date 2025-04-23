@@ -2,6 +2,8 @@
 
 // Get identifier(s) from URL for a work
 
+require_once(dirname(__FILE__) . '/sqlite.php');
+
 require_once(dirname(__FILE__) . '/HtmlDomParser.php');
 use Sunra\PhpSimple\HtmlDomParser;
 
@@ -51,78 +53,14 @@ function get($url, $accept = "text/html")
 
 //----------------------------------------------------------------------------------------
 
+$sql = 'SELECT * FROM citation WHERE url IS NOT NULL';
 
-$urls = array(
-//'https://pmc.ncbi.nlm.nih.gov/articles/PMC7015952/',
-//'https://cir.nii.ac.jp/crid/1880865118193612416',
+$data = db_get($sql);
 
-//'https://www.tandfonline.com/doi/abs/10.1080/00379271.2023.2215216',
-//'https://onlinelibrary.wiley.com/doi/abs/10.1002/ece3.4194',
-
-//'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222119',
-
-//'https://www.ingentaconnect.com/content/miiz/actac/2013/00000015/00000002/art00002',
-
-//'https://www.nature.com/articles/s41598-021-83631-0',
-//'https://cdnsciencepub.com/doi/abs/10.1139/gen-2016-0009',
-//'https://repositorio.uasb.edu.ec/handle/10644/9873',
-
-//'https://www.mdpi.com/1424-2818/11/1/2',
-//'https://brill.com/view/journals/tve/156/2-3/article-p191_6.xml',
-
-//'https://edoc.ub.uni-muenchen.de/27000/',
-
-//'https://nbn-resolving.org/urn:nbn:de:bvb:19-270008',
-
-//'https://pmc.ncbi.nlm.nih.gov/articles/PMC8599385/',
-
-//'https://europeanjournaloftaxonomy.eu/index.php/ejt/article/view/532',
-
-//'https://www.jstor.org/stable/24861908',
-
-//'https://oulurepo.oulu.fi/handle/10024/43702',
-
-//'https://www.kmae-journal.org/articles/kmae/abs/2020/01/kmae190147/kmae190147.html',
-
-//'https://www.biotaxa.org/Zootaxa/article/view/zootaxa.4109.3.7/20444',
-//'https://shilap.org/revista/article/view/651',
-
-//'https://revistas.zamorano.edu/CEIBA/article/download/1224/1167',
-
-//'https://link.springer.com/article/10.1007/s43236-024-00799-0',
-
-//'https://www.scielo.org.mx/scielo.php?pid=S2007-42982024000100026&amp;script=sci_arttext',
-//'https://www.scielo.org.mx/scielo.php?pid=S2007-42982024000100026&script=sci_arttext',
-
-//'https://www.biotaxa.org/AEMNP/article/view/60813', // PDF link broken, actual PDF has DOI
-
-//'https://hal.science/hal-02883398/',
-
-//'https://atrium.lib.uoguelph.ca/bitstreams/4f62fcab-b435-4cbe-ae4f-28cfd81e86f2/download', // pdf
-//'https://atrium.lib.uoguelph.ca/items/e6d1649f-b335-4652-93fb-f93ce62c7a5b',
-
-//'http://colposdigital.colpos.mx:8080/jspui/handle/10521/4356',
-
-//'http://revistaecosistemas.net/index.php/ecosistemas/article/view/1179', // failed but article exists
-//'http://ojs3.uefs.br/index.php/sociobiology/article/view/1044',
-
-//'https://dialnet.unirioja.es/servlet/articulo?codigo=9024079', // NO DOI on site, but link to PDF with DOI
-//'https://doi.org/10.57065/shilap.462',
-
-//'https://atrium.lib.uoguelph.ca/items/dbb9131f-faac-440f-893c-45d34b373e41',
-
-//'https://repositorio.uasb.edu.ec/handle/10644/9873',
-//'https://oulurepo.oulu.fi/handle/10024/43702',
-//'https://repositorium.uminho.pt/handle/1822/90956',
-
-'https://www.biorxiv.org/content/10.1101/2024.01.25.577180.abstract',
-
-'https://contributions-to-entomology.arphahub.com/article_preview.php?id=127094',
-
-);
-
-foreach ($urls as $url)
+foreach ($data as $row)
 {
+	$url = $row->url;
+	
 	$go = true;
 
 	if ($go)
@@ -172,6 +110,7 @@ foreach ($urls as $url)
 		
 					case 'citation_title':
 					case 'bepress_citation_title':
+					case 'DC.title':
 						$source->title = $meta->content;
 						break;
 						
@@ -284,7 +223,18 @@ foreach ($urls as $url)
 				}
 			}
 			
+			if (isset($source->doi))
+			{
+				$source->doi = strtolower($source->doi);
+			}
+			
 			print_r($source);
+			
+			$pub_sql = obj_to_sql($source, 'publication');
+			
+			echo $pub_sql . "\n";
+			
+			db_put($pub_sql);
 			
 		}
 
