@@ -10,16 +10,27 @@ Zeng, Tong, Longfeng Wu, Sarah Bratt, and Daniel E. Acuna. ‘Assigning Credit t
 
 ## BOLD datasets
 
-BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of these, I used Google Scholar to try and link these datasets to publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier, the other for matches on the dataset title (which was retrieved from DataCite). The results of these two searches were stored in a SQL database.
+BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of these, I retrieved metadata from DataCite using their API (`harvest-dois.php`), parsed the resulkting JSON (`parse-dois.php`) and stored the results in the `dataset` table.
+
+I used Google Scholar to try and link these datasets to publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches on the dataset title (which was retrieved from DataCite) (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`.
 
 In the `citation` table the column `match` is “1” if the identifier string is found in the Google Scholar results, otherwise it is NULL. This is useful to filter potentially spurious results, but is also vulnerable to false positives, for example, if the dataset identifier resembles another term in the text, or an author name.
 
-To help filter matches based on dataset name I compute the Levenshtein distance between the dataset title and the article title(s) returned by Google Scholar and store this in the `score` field in the `citation` table. This test is also error-prone. It can miss titles that are clearly related but differ in word order, and it will fail if the language of the article is different from that of the dataset [example]. Because the datasets themselves have been indexed by some of Google Scholar’s sources, it is also possible that the Google Scholar search result is the dataset itself [example].
+To help filter matches based on dataset name I computed the Levenshtein distance between the dataset title and the article title(s) returned by Google Scholar using `match.php` and stored this in the `score` field in the `citation` table. This test is also error-prone. It can miss titles that are clearly related but differ in word order, and it will fail if the language of the article is different from that of the dataset. Because the datasets themselves have been indexed by some of Google Scholar’s sources, it is also possible that the Google Scholar search result is the dataset itself.
 
-Once the two searches were complete the results were examined using the two critera above (presence of dataset identifier, match to dataset title). Once clear examples of matches were identified using these methods, the remaining results were manually inspected. The column `accepted` records a match that is deemed to be correct.
+Once the two searches were complete the results were examined using the two criteria above (presence of dataset identifier, match to dataset title). Once clear examples of matches were identified using these methods, the remaining results were manually inspected. The column `accepted` records a match that is deemed to be correct. The data to be manually checked was exported using `export.php` and loaded into a Google Sheet.
 
-To do: The results were then output into reusable formats.
+After the Google sheet was edited, it was added to the SQL dataset as the table `cleaned`. This table was run through further automated checking using `check.php`. URLs that hadn’t been accepted or rejected were resolved, and the name of the dataset was looked for in either the HTML or PDF for the article.
 
+The table `cleaned` was then manually checked one more time, and declared to be “complete”, knowing that there are obviously still gaps. The script `summary.php` is used to summarise and explore the results.
+
+Note that `cleaned` is a subset of `dataset` as many datasets returned no result when searched for on Google Scholar.
+
+The table `publications` contains URLs from the Google Scholar results, and metadata extracted by resolving the URL using `url2doi.php` and looking at `<meta>` tags. An attempt was also made to extract DOIs from URLs using regular expressions in `url2extract.php`.
+
+### Output
+
+The table `dataset` represents the data for BOLD datasets. The table `cleaned` represents a mapping between those datasets and papers that publish and/or cite those datasets.
 
 ## Examples
 
