@@ -1,0 +1,30 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.14288/1.0340546",
+  "language": "en",
+  "author": [
+    {
+      "family": "Manton",
+      "given": "Erin Rebecca"
+    }
+  ],
+  "contributor": [
+    {
+      "literal": "University Of British Columbia"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2017
+      ]
+    ]
+  },
+  "abstract": "DNA barcoding is a tool for rapidly identifying species based on short, standardized sequences of DNA, for example in situations where this may be difficult using morphology alone. I assembled a core DNA barcode reference library for southern British Columbia, home to ~54% of the vascular plant species in Canada, using the core plastid barcode loci rbcL and matK, and assessed its utility for identifying species in this region. The library comprises 4,812 sequences obtained from field-collected and herbarium tissue samples, supplemented with sequences downloaded from BOLD and GenBank, with at least one sequence for 75.4% of the vascular plant species occurring below 50°N in British Columbia. Sequence recoverability was significantly higher for rbcL than for matK (93.5% and 80.2%, respectively), and only marginally lower for both markers when using herbarium specimens (90.5% for rbcL and 77.8% for matK), which demonstrates the future feasibility of using museum specimens for completing a southern BC barcode reference library. As a proxy for assessing marker effectiveness, I scored resolution at the level of species and genus using tests of monophyly for Neighbour Joining trees, and performed sequence similarity searches with BLASTn analyses, both for each locus separately and for a dual-locus marker system (rbcL+matK; scored as a cumulative percentage in the BLAST analyses). Ignoring species represented by singleton sequences, the highest overall level of discrimination (66.9% of species and 91.6% of genera) was achieved for BLASTn analysis of rbcL+matK together. This work represents a significant contribution to a nation-wide barcode database, and provides a preliminary platform for ecological and other applications requiring species identification, where traditional methods are not feasible.",
+  "container-title": "University of British Columbia",
+  "DOI": "10.14288/1.0340546",
+  "publisher": "University of British Columbia",
+  "title": "DNA barcoding the vascular plant flora of southern British Columbia",
+  "URL": "https://doi.library.ubc.ca/10.14288/1.0340546",
+  "version": "1"
+}

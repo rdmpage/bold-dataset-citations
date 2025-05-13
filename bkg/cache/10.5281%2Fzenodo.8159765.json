@@ -1,0 +1,62 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.5281/zenodo.8159765",
+  "categories": [
+    "Biodiversity",
+    "Taxonomy",
+    "Animalia",
+    "Arthropoda",
+    "Insecta",
+    "Lepidoptera",
+    "Cosmopterigidae"
+  ],
+  "author": [
+    {
+      "family": "Doorenweerd",
+      "given": "Camiel"
+    },
+    {
+      "family": "Austin",
+      "given": "Kyhl A."
+    },
+    {
+      "family": "Rubinoff",
+      "given": "Daniel"
+    },
+    {
+      "family": "n",
+      "given": "sp."
+    },
+    {
+      "family": "n",
+      "given": "sp."
+    },
+    {
+      "family": "n",
+      "given": "sp."
+    },
+    {
+      "family": "n",
+      "given": "sp."
+    },
+    {
+      "family": "n",
+      "given": "sp."
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        31
+      ]
+    ]
+  },
+  "abstract": "Doorenweerd, Camiel, Austin, Kyhl A., Rubinoff, Daniel, n, sp., n, sp., n, sp., n, sp., n, sp. (2023): Five New Species of Hawaiian Endemic Fancy Case Caterpillars from a Recently Established Forest Reserve on Maui (Cosmopterigidae: Hyposmocoma). Proceedings of the Hawaiian Entomological Society 55: 29-44, DOI: 10.5281/zenodo.8159765",
+  "DOI": "10.5281/ZENODO.8159765",
+  "publisher": "Zenodo",
+  "title": "Five New Species of Hawaiian Endemic Fancy Case Caterpillars from a Recently Established Forest Reserve on Maui (Cosmopterigidae: Hyposmocoma)",
+  "URL": "https://zenodo.org/doi/10.5281/zenodo.8159765",
+  "copyright": "Creative Commons Attribution 4.0 International"
+}

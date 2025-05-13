@@ -1,0 +1,32 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.13133/2284-4880/570",
+  "language": "en",
+  "author": [
+    {
+      "family": "Grebennikov",
+      "given": "Vasily V."
+    },
+    {
+      "family": "Smith",
+      "given": "Andrew B.T."
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        30
+      ]
+    ]
+  },
+  "abstract": "Although best known for the capacity to fully conglobate their bodies into a \"perfect\" spheroid, a few Ceratocanthinae (=pill scarabs; Coleoptera: Hybosoridae) have drastically different body architecture. Six South American species, or 1.5% of species diversity, have straight bodies incapable of any conglobation, while some 20% of species can achieve only incomplete body conglobation with legs and abdomen partly exposed. Historically, both latter character states were considered as ancestral and transitional, respectively, in the irreversible evolutionary \"progression\" towards full-body conglobation. Here we use molecular sequence data to hypothesize a new clade uniting all bodily straight and incompletely conglobate pill scarabs. Significantly, this clade is nested within a clade otherwise consisting of species capable of full-body conglobation. This topology implies that the most recent common ancestor of all pill scarabs had a capacity of full-body conglobation. Consequently, we re-interpret the pill scarab straight and partly conglobate body architectures as secondary reversals to the ancestral condition from the fully conglobate state. If so, the tribe Ceratocanthini uniting 98% of pill scarab species is rendered paraphyletic by two remaining and much smaller South American tribes, Ivieolini and Scarabatermitini. The latter contains three and five rare species, respectively, all of them supposedly termitophilous and all herein illustrated.",
+  "container-title": "Fragmenta entomologica",
+  "DOI": "10.13133/2284-4880/570",
+  "page": "Vol. 53 No. 2 (2021)",
+  "publisher": "Fragmenta entomologica",
+  "title": "new hypothesis on the evolution of the hybosorid beetle capacity to conglobate their bodies into a tight ball (Coleoptera: Scarabaeoidea)",
+  "URL": "https://rosa.uniroma1.it/rosa02/fragmenta_entomologica/article/view/570",
+  "copyright": "Creative Commons Attribution Non Commercial 4.0 International"
+}

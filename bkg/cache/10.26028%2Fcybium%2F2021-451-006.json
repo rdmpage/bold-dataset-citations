@@ -1,0 +1,56 @@
+{
+  "type": "article",
+  "id": "https://doi.org/10.26028/cybium/2021-451-006",
+  "categories": [
+    "Schismatogobius; New species; Gobiidae; Sulawesi; Indonesia"
+  ],
+  "author": [
+    {
+      "family": "Keith",
+      "given": "Philippe"
+    },
+    {
+      "family": "Delrieu-Trottin",
+      "given": "Erwan"
+    },
+    {
+      "family": "Utama",
+      "given": "Ilham V."
+    },
+    {
+      "family": "Sauri",
+      "given": "Sopian"
+    },
+    {
+      "family": "Busson",
+      "given": "Frédéric"
+    },
+    {
+      "family": "Nurjirana"
+    },
+    {
+      "family": "Wowor",
+      "given": "Daisy"
+    },
+    {
+      "family": "Dahruddin",
+      "given": "Hadi"
+    },
+    {
+      "family": "Hubert",
+      "given": "Nicolas"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2021
+      ]
+    ]
+  },
+  "abstract": "A new species of Schismatogobius, a freshwater goby, is described from Sulawesi (Indonesia). It differs from other species belonging to the genus by a high percentage of genetic divergence in partial COI gene (652 bp) and by several characters, including the number of pectoral fin rays, the pectoral fin colour pattern, the jaw length/head length ratio and the preanal length.",
+  "DOI": "10.26028/CYBIUM/2021-451-006",
+  "publisher": "Cybium",
+  "title": "A new species of Schismatogobius (Teleostei: Gobiidae) from Sulawesi (Indonesia)",
+  "URL": "http://sfi-cybium.fr/fr/new-species-schismatogobius-teleostei-gobiidae-sulawesi-indonesia"
+}

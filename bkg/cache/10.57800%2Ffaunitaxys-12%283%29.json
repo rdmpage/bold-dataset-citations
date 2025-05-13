@@ -1,0 +1,26 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.57800/faunitaxys-12(3)",
+  "author": [
+    {
+      "family": "Lapèze",
+      "given": "Jérémie"
+    },
+    {
+      "family": "Lopez-Vaamonde",
+      "given": "Carlos"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024
+      ]
+    ]
+  },
+  "container-title": "Faunitaxys, 12(3): 1 – 23",
+  "DOI": "10.57800/FAUNITAXYS-12(3)",
+  "publisher": "Faunitaxys, 12(3): 1 – 23",
+  "title": "Description de cinq nouvelles espèces de Lycoderides Sakakibara (Hemiptera: Auchenorrhyncha: Membracidae) de Guyane française",
+  "URL": "https://hal.science/hal-04421763"
+}

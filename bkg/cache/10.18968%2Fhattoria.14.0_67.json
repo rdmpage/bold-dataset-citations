@@ -1,0 +1,45 @@
+{
+	"DOI":"10.18968/hattoria.14.0_67",
+	"URL":"https://doi.org/10.18968/hattoria.14.0_67",
+	"language":"en",
+	"title":"Studies on <i>Aneura</i> (Aneuraceae): The <i>Aneura maxima</i> complex",
+	"author":[
+		{
+			"given":"Lars",
+			"family":"SÖDERSTRÖM"
+		},
+		{
+			"given":"Laura L.",
+			"family":"FORREST"
+		},
+		{
+			"given":"Kristian",
+			"family":"HASSEL"
+		},
+		{
+			"given":"David G.",
+			"family":"LONG"
+		},
+		{
+			"given":"Ana",
+			"family":"SÉNECA"
+		},
+		{
+			"given":"Yuya",
+			"family":"INOUE"
+		}
+	],
+	"publisher":"Hattori Botanical Laboratory",
+	"issued":{
+		"date-parts":
+			[
+				[2023]
+			]
+	},
+	"volume":"14",
+	"number":"0",
+	"page":"67-73",
+	"ISSN":
+		["21858241","21858241","24238961"],
+	"container-title":"Hattoria"
+}

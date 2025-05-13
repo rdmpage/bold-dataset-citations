@@ -1,0 +1,37 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.5281/zenodo.7418826",
+  "categories": [
+    "Área de Conservación Guanacaste, cryptic species, cloud forest, DNA barcoding, dry forest, larvae, Museo Nacional de Costa Rica, rain forest."
+  ],
+  "author": [
+    {
+      "family": "Chacón",
+      "given": "Isidro A."
+    },
+    {
+      "family": "Janzen",
+      "given": "Daniel H."
+    },
+    {
+      "family": "Hallwachs",
+      "given": "Winnie"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        15
+      ]
+    ]
+  },
+  "abstract": "Article published in the journal Tropical Lepidoptera Research.",
+  "container-title": "Zenodo",
+  "DOI": "10.5281/ZENODO.7418826",
+  "publisher": "Zenodo",
+  "title": "Seventeen cryptic new species of Nystalea Guenée, 1852 (Notodontidae: Nystaleinae) from Costa Rica",
+  "URL": "https://zenodo.org/record/7418826",
+  "copyright": "Creative Commons Attribution Non Commercial 4.0 International"
+}

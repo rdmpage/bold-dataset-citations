@@ -1,0 +1,27 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.13133/2284-4880/308",
+  "language": "en",
+  "author": [
+    {
+      "family": "Grebennikov",
+      "given": "Vasily V."
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        12,
+        21
+      ]
+    ]
+  },
+  "abstract": "A new weevil taxon, Aater cangshanensis gen. et sp. nov. is established for a single female specimen sifted from the forest litter on the Cang Shan Mountain Range in Yunnan, China. This small flightless beetle (the combined length of pronotum and elytra is 3.4 mm) has relatively long and straight rostrum, contiguous procoxae and tuberculate elytra with effaced shoulders. Remarkably, the new genus has a prosternal canal on the ventral side of the prothorax. This feature is characteristic to the weevils of the Old World nominal tribe Aminyopini (=Euderini of some authors) and to the China-Nepal genus Niphadomimus (Typoderini). A phylogenetic molecular analysis using an alignment of 2,956 bp from one mitochondrial and two nuclear fragments outputted a mainly inconclusive topology with low backbone resolution. Terminals with prosternal canal were grouped into four clades not most closely related to each other: Aater cangshanensis gen. et sp. nov., Niphadomimus, African Aminyopini and Asian Aminyopini; the latter three clades each with bootstrap support of 100%. The prosternal canal has either evolved more than once, or reversed once or more, or both. The sister group of Aater gen. nov. cannot be reliably identified and, therefore, the new genus is assigned to Molytinae incertae sedis.",
+  "container-title": "Fragmenta Entomologica",
+  "DOI": "10.13133/2284-4880/308",
+  "page": "Vol. 50 No. 2 (2018)",
+  "publisher": "Fragmenta Entomologica",
+  "title": "Phylogenetically problematic Aater cangshanensis gen. et sp. nov. from Southwest China suggests multiple origins of prosternal canal in Molytinae weevils (Coleoptera: Curculionidae)",
+  "URL": "https://rosa.uniroma1.it/rosa02/fragmenta_entomologica/article/view/308"
+}

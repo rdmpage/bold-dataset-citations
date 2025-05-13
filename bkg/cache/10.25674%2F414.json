@@ -1,0 +1,42 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.25674/414",
+  "author": [
+    {
+      "family": "Goulpeau",
+      "given": "Arnaud"
+    },
+    {
+      "family": "Hedde",
+      "given": "Mickaël"
+    },
+    {
+      "family": "Maggia",
+      "given": "Marie-Eugénie"
+    },
+    {
+      "family": "Gérard",
+      "given": "Sylvain"
+    },
+    {
+      "family": "Lapied",
+      "given": "Emmanuel"
+    },
+    {
+      "family": "Decaens",
+      "given": "Thibaud"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024
+      ]
+    ]
+  },
+  "container-title": "Senckenberg Society for Nature Research",
+  "DOI": "10.25674/414",
+  "publisher": "Senckenberg Society for Nature Research",
+  "title": "A dataset for earthworm communities in French Guiana",
+  "URL": "https://soil-organisms.org/index.php/SO/article/view/414"
+}

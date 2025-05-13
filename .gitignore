@@ -5,5 +5,8 @@
 /json/
 /junk/
 
+/bkg/env.php
+/bkg/junk/
+
 boldcite.db-shm
 boldcite.db-wal

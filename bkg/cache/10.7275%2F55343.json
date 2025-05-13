@@ -1,0 +1,23 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.7275/55343",
+  "author": [
+    {
+      "family": "Schmidt",
+      "given": "Allyson"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024
+      ]
+    ]
+  },
+  "abstract": "Understanding dietary requirements and the ecological roles of species is vital for effective conservation management. This study uses DNA metabarcoding, specifically the trnL intron, to examine the plant diet composition of Kinda baboons (Papio kindae) and straw-colored fruit bats (Eidolon helvum) in Kasanka National Park, Zambia. Our results revealed significant seasonal variation in the baboon diet highlighting their omnivorous nature and dietary flexibility. We also confirmed dietary overlap between the baboons and bats during the roosting period when both species are present in the park. This research highlights the importance of utilizing molecular techniques to better understand the dietary ecology of species and their interactions within ecosystems in order to provide critical insights for conservation strategies aimed at preserving these important species and their habitats.",
+  "container-title": "University of Massachusetts Amherst",
+  "DOI": "10.7275/55343",
+  "publisher": "University of Massachusetts Amherst",
+  "title": "Who's Eating What: A Molecular Diet Analysis of Patio kindae and Eidolon helvum in Kasanka National Park",
+  "URL": "https://scholarworks.umass.edu/entities/publication/1e05cb36-2fde-450d-9f40-2d92300d704c"
+}

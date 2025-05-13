@@ -1,0 +1,25 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.20363/bzb-2023.72.1.001",
+  "author": [
+    {
+      "family": "Taberer",
+      "given": " Tabitha R."
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        12
+      ]
+    ]
+  },
+  "abstract": "The taxonomy and nomenclature of the small Afrotropical family Chrysopolomidae Aurivillius, 1895 is up- dated utilising a holistic approach incorporating genetic and morphological evidence. The placement of genera within the two subfamilies erected by Hering (1937), Chrysopolominae and Ectropinae, is clarified, the generic boundaries are defined and a list of all known taxa is provided. Based on phylogenetic and morphological results, two new genera of Ectropinae are described: Muscectropa gen. n. and Pseudectropona gen. n. Achrocerides Hering, 1937, Strigivenifera Hering, 1937 and Diquishia Kurshakov Zolotuhin, 2016 are transferred out of Ectropinae and back into Chrysopolominae, the Chrysopoloma species C. restricta Distant, 1899 is transferred to Scotinocerides, and three Hamartia taxa H. medora moulini Rougeot, 1977, H. paupera paupera (Hering, 1937) and H. paupera johanni Rougeot, 1977 are transferred to Chrysopoloma. In addition, a new genus for S. nigrociliata is established based on genital morphology and genetic diver- gences: Auripoloma gen. n. Genitalia figures accompany re-descriptions of each genus and a key to the genera is provided to facilitate identifications.",
+  "DOI": "10.20363/BZB-2023.72.1.001",
+  "publisher": "Zoological Research Museum Alexander Koenig",
+  "title": "Revision of the family Chrysopolomidae Aurivillius, 1895 (Lepidoptera: Zygaenoidea) with the description of three new genera",
+  "URL": "https://www.zoologicalbulletin.de/BzB_Volumes/BzB_72_1/001_taberer_20230112.pdf",
+  "copyright": "Open Access"
+}

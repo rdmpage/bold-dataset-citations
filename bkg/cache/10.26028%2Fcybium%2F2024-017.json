@@ -1,0 +1,62 @@
+{
+  "type": "",
+  "id": "https://doi.org/10.26028/cybium/2024-017",
+  "categories": [
+    "Amphidromy, Barcode, Endemism, Gobioidei, Indo-Pacific area, Integrative taxonomy, Stenogobius"
+  ],
+  "author": [
+    {
+      "family": "Causse",
+      "given": "Romain"
+    },
+    {
+      "family": "Mennesson",
+      "given": "Marion I."
+    },
+    {
+      "family": "Dahruddin",
+      "given": "Hadi"
+    },
+    {
+      "family": "Sauri",
+      "given": "Sopian"
+    },
+    {
+      "family": "Busson",
+      "given": "Frédéric"
+    },
+    {
+      "family": "Limmon",
+      "given": "Gino"
+    },
+    {
+      "family": "Wowor",
+      "given": "Daisy"
+    },
+    {
+      "family": "Hubert",
+      "given": "Nicolas"
+    },
+    {
+      "family": "Lord",
+      "given": "Clara"
+    },
+    {
+      "family": "Keith",
+      "given": "Philippe"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024
+      ]
+    ]
+  },
+  "abstract": "Freshwater habitats in Indo-Pacific tropical islands are mainly inhabited by amphidromous fish, which display a marine larval phase while the rest of their life cycle takes place in rivers. Gobiiformes are the most diversified fish component in these ecosystems. In this study, we focused on the status of the widespread Stenogobius genus (Gobioidei). This genus is distributed from the Indian Ocean to French Polynesia. Recently, a first revision of Stenogobius was undertaken leading to the redescription of S. genivittatus (Valenciennes, 1837) and the placement of 12 species names as synonyms of this species. This paper focuses on the status of nine Stenogobius species supposedly present in Indonesia, a country well known as one of the freshwater hotspots of biodiversity. The present study is based on 95 specimens, and includes morphomeristic data and partial mitochondrial COI sequences. Our results show that, at least four species occur in Indonesia, including the widespread species S. genivittatus.",
+  "DOI": "10.26028/CYBIUM/2024-017",
+  "publisher": "Cybium",
+  "title": "Stenogobius (Teleostei: Gobioidei: Oxudercidae) from Indonesia",
+  "URL": "https://sfi-cybium.fr/fr/stenogobius-teleostei-gobioidei-oxudercidae-indonesia",
+  "version": ""
+}

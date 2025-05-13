@@ -1,0 +1,35 @@
+{
+  "type": "thesis",
+  "id": "https://doi.org/10.5282/edoc.27000",
+  "categories": [
+    "DNA, biodiversity, DNA barcoding, metabarcoding, invasive species",
+    "500",
+    "570",
+    "FOS: Biological sciences"
+  ],
+  "language": "en",
+  "author": [
+    {
+      "family": "Hardulak",
+      "given": "Laura A."
+    }
+  ],
+  "contributor": [
+    {
+      "family": "Haszprunar",
+      "given": "Gerhard"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2020
+      ]
+    ]
+  },
+  "abstract": "As a relatively new technology, DNA metabarcoding has already shown potential for a wide variety of practical applications. Biodiversity monitoring is a discipline of particular importance currently, as hundreds or thousands of species become extinct each year, and most extant species remain undescribed. Metabarcoding can greatly assist in increasing the speed and decreasing the cost of large-scale biodiversity monitoring campaigns, but development and improvement of techniques involved in the steps of a metabarcoding pipeline, from DNA extraction through taxonomic identification of sequence data, are still needed. Projects presented in this thesis cover a range of applications of DNA metabarcoding, from biodiversity monitoring of terrestrial invertebrates, to forensic entomology, reverse taxonomy, and the quality control of food, beverage, and novel food products. A multi-year biomonitoring survey with a special focus on early detection of invasive and/or pest species was conducted in the largest national park in Europe. Results demonstrate the effectiveness of metabarcoding for characterizing biodiversity patterns and phenologies, with Principal Component Analyses and ANOSIM tests showing a significant difference in BIN compositions between groups of samples taken from inside of versus outside of the park, for each of the two study years (2016 r = 0.2, p = 2e-04; 2018 r = 0.239, p = 1e-04). Results of the same study also provide support for employing multiple methods of DNA extraction from bulk samples (i.e. homogenizing the specimens themselves, and utilization of the preservative ethanol as a source of genetic material), as well as combining multiple reference sequence databases, in order to improve the chances of detecting species of interest. An attempt was made to counter the issue of specimen size bias, by pre-sorting specimens according to size, but was not successful for the smallest specimens. The invasive pest Lymantria dispar (Linnaeus, 1758) was detected in an ethanol-extracted sample, representing the first detection of this species in the Bavarian Forest National Park. In another project, a DNA barcode library was created, with records for 2,453 named species and 5,200 total BINs, whereby metabarcoding sequence clusters were able to be assigned to “dark” taxa, or taxa which have not yet been described, but are known only by BIN or MOTU, in a reverse taxonomic approach. For families containing “dark taxa”, an inverse correlation was discovered between body size and percentage of unnamed taxa (r = -0.41, p = 4e-04). A pilot study in DNA barcoding for forensic entomology resulted in the contribution of 120 high quality COI barcode sequences to the ZSM reference library, with 46 newly added species belonging to 11 orders. Metabarcoding facilitated the characterization of insect material collected on decomposing porcine corpses, with 469 species identified molecularly from HTS data. Metabarcoding of food and brewing yeasts was also performed. It was demonstrated that metabarcoding can be successfully applied as a non-targeted approach to detecting differing species in supposedly pure yeast starter cultures, using the 26S rDNA D1/D2 region of chromosome XII in Saccharomyces spp. All of the work herein contributes to the growing knowledge bases of describing the earth’s biodiversity, as well as, from a practical standpoint, the refinement of methods involved in the process of DNA metabarcoding for molecular taxon identification.",
+  "DOI": "10.5282/EDOC.27000",
+  "publisher": "Ludwig-Maximilians-Universität München",
+  "title": "Development and improvement of next generation sequencing pipelines for mixed and bulk samples of German fauna",
+  "URL": "https://edoc.ub.uni-muenchen.de/id/eprint/27000"
+}

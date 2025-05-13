@@ -1,0 +1,27 @@
+{
+  "type": "thesis",
+  "id": "https://doi.org/10.13023/etd.2016.110",
+  "categories": [
+    "Agriculture",
+    "Entomology"
+  ],
+  "author": [
+    {
+      "family": "Pook",
+      "given": "Victoria G."
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2016
+      ]
+    ]
+  },
+  "abstract": "Parasitoid wasps are hyperdiverse, with current estimates suggesting that they may account for up to 20% of all insect species. Though their ecological significance and their importance in integrated pest management cannot be denied, these taxa remain understudied and, due to their small size, are often overlooked. However, recent advances in molecular techniques are helping to reverse this trend by providing tools which scientists can use to better understand species limits and host interactions.  Parasitoid wasps are often morphologically cryptic and their accurate delimitation requires the analysis of DNA sequence data from fast-evolving genes in addition to morphological characters. The research presented here demonstrates the utility of a new molecular locus in species delimitation. Also, a morphological key to the species of a genus occurring in America, north of Mexico is presented.  The interactions between parasitoid wasps and their hosts are highly complex. On the wasp side, it involves the production venom, which likely contains bountiful natural resources. In this study, the venom proteins of wasps of the genus Megarhyssa (Hymenoptera: Ichneumonidae) are identified. Putative functions are assigned to these proteins and possible applications are discussed. One of the proteins identified is the enzyme, laccase, which is associated with the degradation and digestion of wood. The sequence of the gene coding for this laccase was analyzed and used to create recombinant proteins in a baculovirus-insect cell expression system. Future work investigating this enzyme is necessary to determine its activity against the plant cell wall.  The research presented here provides insight into the identification and venom composition of ichneumonid wasps. The results contribute to our knowledge of this understudied taxon and indicate that there is much to be gained from further research in this field which will become increasingly practicable as molecular techniques advance and become more affordable.",
+  "DOI": "10.13023/ETD.2016.110",
+  "publisher": "University of Kentucky",
+  "title": "INVESTIGATING ICHNEUMONIDAE",
+  "URL": "http://uknowledge.uky.edu/entomology_etds/28/",
+  "copyright": "Copyright © Victoria Gillian Pook 2016"
+}

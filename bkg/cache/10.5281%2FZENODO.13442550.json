@@ -1,0 +1,60 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.5281/zenodo.13442550",
+  "categories": [
+    "Alien moth",
+    "leafminer",
+    "heliozelid",
+    "novel records",
+    "Southern Russia",
+    "Sochi",
+    "Crimea",
+    "North Caucasus"
+  ],
+  "language": "en",
+  "author": [
+    {
+      "family": "Kirichenko",
+      "given": "Natalia I."
+    },
+    {
+      "family": "Shoshina",
+      "given": "Elena I."
+    },
+    {
+      "family": "Zhuravleva",
+      "given": "Elena N."
+    },
+    {
+      "family": "Khuapshykhu",
+      "given": "Irina K."
+    },
+    {
+      "family": "Gomboc",
+      "given": "Stanislav"
+    },
+    {
+      "family": "Ayba",
+      "given": "Lesik Ya."
+    },
+    {
+      "family": "Natalia N. Karpun"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        31
+      ]
+    ]
+  },
+  "abstract": "The invasive North American leaf-mining moth Coptodisca lucifluella (Clemens, 1860) (Lepidoptera: Heliozelidae) is reported for the first time in Russia and Abkhazia based on findings of the leaf mines on Carya illinoinensis, Car. tomentosa, Pterocarya fraxinifolia, Juglans regia, and J. nigra in Sochi, Sirius, Crimea, and Abkhazian settlements in 2023 and 2024. The species was identified by DNA barcoding of two larvae dissected from the leaf mines and by morphology of adults grown from the leaf mines in 2024. The analysis of DNA barcoding data of the Russian and Abkhazian specimens together with those from Europe (invaded range) and North America (native range), publicly available in BOLD and/or GenBank, defined relatively low (1.45%) intraspecific variability. High interspecific divergence (over 9%) was detected when comparing C. lucifluella with another invasive North American heliozelid, C. juglandiella, currently spreading in Europe but not yet recorded in Russia and Abkhazia. The leaf mines of C. lucifluella (Chambers, 1874) were notably abundant on the North American pecan, Car. illinoinensis, widely cultivated in orchards and urban area in Southern Russia and Abkhazia. Up to 162±23 mines (maximal of 216 mines) and up to 182±30 mines (maximal of 269 mines) per a compound leaf were documented in Sochi (Russia) and Gulrypsh District (Abkhazia), respectively. In Abkhazia, up to 35% parasitism rate was recorded, with unidentified Eulophidae as a main cause. The overview of the modern range of C. lucifluella and the note on its bionomics in the studied localities are provided. Furthermore, the potential of the species spread in Russia and beyond (in particular to Caucasus and Asian countries) is discussed.",
+  "container-title": "Altai State University",
+  "DOI": "10.5281/ZENODO.13442550",
+  "publisher": "Altai State University",
+  "title": "The North American leaf-mining moth Coptodisca lucifluella (Lepidoptera: Heliozelidae) reached Southern Russia and Abkhazia: genetic variability and potential for further spread",
+  "URL": "https://zenodo.org/doi/10.5281/zenodo.13442550",
+  "copyright": "Creative Commons Attribution 4.0 International"
+}

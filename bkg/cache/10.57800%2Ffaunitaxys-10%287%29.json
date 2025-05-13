@@ -1,0 +1,53 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.57800/faunitaxys-10(7)",
+  "categories": [
+    "Hemiptera",
+    "membracides",
+    "Barcode Index Number",
+    "codes-barres ADN",
+    "COI",
+    "élevage",
+    "larve",
+    "taxinomie",
+    "systématique",
+    "Lycoderes",
+    "Clusia",
+    "plante-hôte",
+    "Guyane.",
+    "[SDV.BA] Life Sciences [q-bio]/Animal biology",
+    "[SDE.BE] Environmental Sciences/Biodiversity and Ecology"
+  ],
+  "language": "fr",
+  "author": [
+    {
+      "family": "Lapèze",
+      "given": "Jérémie"
+    },
+    {
+      "family": "Lopez-Vaamonde",
+      "given": "Carlos"
+    }
+  ],
+  "contributor": [
+    {
+      "family": "Delaunay",
+      "given": "Lionel"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  },
+  "abstract": "Three new treehoppers species, closely related to Lycoderides brulei Sakakibara, 2013, are described from French Guiana: Lycoderides carboneus Lapèze n. sp., Lycoderides elephantus Lapèze n. sp. and Lycoderides sonzognii Lapèze n. sp..The first two species are described based on adults of both sexes, their last nymphal stage is described and their host plants of the genus Clusia (Clusiaceae) are mentioned and illustrated. Lycoderides sonzognii n. sp. is described based on three females caught with a light trap. Lycoderides elephantus n. sp. has been reared, its biological cycle is presented in detail. Holotypes and some paratypes are deposited at MNHN of Paris. Additional notes about field observations, host-plants, distribution, behavior and predation are presented. These three new species, along with Lycoderides brulei, have a diagnostic character: a line of weakness at the base of the pronotum, morphological feature which is unique among Lycoderides. DNA barcoding allows to match males and females, and each species forms a clade and have been assigned unique Barcode Index Numbers (BIN).An identification key is provided for the four species of Lycoderides having a line of weakness. A revised check-list of the Lycoderides from French Guiana is presented. A discussion about Lycoderes mitratus Germar, 1935 presents how it may have been confused in the past with one of the four species illustrated here.",
+  "container-title": "Faunitaxys, 10(7): 1-19",
+  "DOI": "10.57800/FAUNITAXYS-10(7)",
+  "publisher": "Faunitaxys, 10(7): 1-19",
+  "title": "Trois nouvelles espèces de Lycoderides Sakakibara, 1972 (Hemiptera: Membracidae: Stegaspidinae) de Guyane Française ayant pour plante-hôte des Clusia (Clusiaceae)",
+  "URL": "https://hal.archives-ouvertes.fr/hal-03567418v1",
+  "copyright": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+  "version": "1"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.25674/416",
+  "author": [
+    {
+      "family": "Grebennikov",
+      "given": "Vasily"
+    },
+    {
+      "family": "Andújar",
+      "given": "Carmelo"
+    },
+    {
+      "family": "Elgueta",
+      "given": "Mario"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024
+      ]
+    ]
+  },
+  "container-title": "Senckenberg Society for Nature Research",
+  "DOI": "10.25674/416",
+  "publisher": "Senckenberg Society for Nature Research",
+  "title": "Deep soil floatation in Chile reveals diverse and mainly nameless fauna of endogean beetles (Coleoptera) ",
+  "URL": "https://soil-organisms.org/index.php/SO/article/view/416"
+}

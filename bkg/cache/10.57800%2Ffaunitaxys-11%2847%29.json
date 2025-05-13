@@ -1,0 +1,54 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.57800/faunitaxys-11(47)",
+  "categories": [
+    "Neotropical Arctiinae",
+    "Lithosiini",
+    "Cloesia",
+    "Dipaenae",
+    "barcode COI gene",
+    "new species",
+    "new combination",
+    "[SDE.BE] Environmental Sciences/Biodiversity and Ecology",
+    "[SDV.BA.ZI] Life Sciences [q-bio]/Animal biology/Invertebrate Zoology"
+  ],
+  "language": "en",
+  "author": [
+    {
+      "family": "Laguerre",
+      "given": "Michel"
+    },
+    {
+      "family": "Espinoza",
+      "given": "Bernardo"
+    },
+    {
+      "family": "Janzen",
+      "given": "Daniel H."
+    },
+    {
+      "family": "Hallwachs",
+      "given": "Winnie"
+    }
+  ],
+  "contributor": [
+    {
+      "family": "Delaunay",
+      "given": "Lionel"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023
+      ]
+    ]
+  },
+  "abstract": "The genus Cloesia Hampson, 1900 which contained, up to now, three different species is reviewed. Besides the historical species which are redescribed, two more species wrongly classified are transferred to the genus: Dipaenae zygaenoides Toulgoët, 1983 and Lithoprocris methyalea Hampson, 1900. Then three new species from Latin America are added: Cloesia aereus Laguerre sp. n. from S.E. Brazil, Cloesia andensis Laguerre sp. n. from Peru and Bolivia and Cloesia imitator Laguerre sp. n. from French Guiana. Finally, two more species are described from Central America: Cloesia mariamartachavarriae Espinoza sp. n. and Cloesia luzmariaromeroae Espinoza sp. n. both from Costa Rica. All species, their male genitalia and the majority of female genitalia are illustrated. A distance tree of COI gene sequences is presented and discussed.",
+  "container-title": "Faunitaxys, 11(47): 1-21",
+  "DOI": "10.57800/FAUNITAXYS-11(47)",
+  "publisher": "Faunitaxys, 11(47): 1-21",
+  "title": "Revision of the genus Cloesia Hampson, 1900: description of five new species and recombination of two species (Noctuoidea Erebidae Arctiinae Lithosiini)",
+  "URL": "https://hal.science/hal-04149741v2",
+  "version": "2"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "article-journal",
+  "id": "https://doi.org/10.13133/2284-4880/547",
+  "language": "en",
+  "author": [
+    {
+      "family": "Grebennikov",
+      "given": "Vasily"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        30
+      ]
+    ]
+  },
+  "abstract": "A new pill scarab with peculiar carinate apical halves of the elytra, Balleriodes sphaera gen. et sp. nov., is described and illustrated from the Udzungwa Mountains, Tanzania. A phylogenetic analysis of 73 terminals and 3118 aligned positions from three DNA fragments placed Balleriodes within a newly recognized and strongly supported clade herein informally named the Synarmostes group. The group includes three monophyletic species-rich genera: African Melanophilharmostes and Pseudopterorthochaetes, as well as Synarmostes from Madagascar and the Comoro Islands. The discovery of the monotypic genus Balleriodes gen. nov. in Udzungwa highlights the importance of the ancient and exceptionally biodiverse chain of the Eastern Arc Mountains in Tanzania and Kenya. Three cases of overseas dispersal by the members of the Synarmostes group are hypothesized: Africa to Madagascar, Madagascar to Comoros, and Africa to Annobón. Preliminary biogeographical interpretation of the increasingly more resolved pantropical subfamily Ceratocanthinae is presented.",
+  "container-title": "Fragmenta entomologica",
+  "DOI": "10.13133/2284-4880/547",
+  "page": "Vol. 53 No. 2 (2021)",
+  "publisher": "Fragmenta entomologica",
+  "title": "Phylogenetic placement of a new paleoendemic pill scarab (Coleoptera: Hybosoridae: Ceratocanthinae) from the Udzungwa Mountains, Tanzania, triggers biogeographic interpretations",
+  "URL": "https://rosa.uniroma1.it/rosa02/fragmenta_entomologica/article/view/547",
+  "copyright": "Creative Commons Attribution Non Commercial 4.0 International"
+}
