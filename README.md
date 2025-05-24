@@ -58,7 +58,7 @@ https://bold-view-bf2dfe9b0db3.herokuapp.com/?recordset=DS-ABSKMA matches https:
 
 https://doi.org/10.1371/journal.pone.0116612
 
-## Manual
+### Manual matching
 
 Some examples of manually matched records:
 
@@ -73,6 +73,116 @@ Some examples of manually matched records:
 | 10.5883/DS-EBER | 10.1051/kmae/2020038 |  |
 | 10.5883/DS-MERGALBE | http://www.nw-ornithologen.de/images/textfiles/charadrius/charadrius51_57_62_Klein_etal_ErstbrutnachweisZwergsaegerDeutschland.pdf | |
 
+
+## Knowledge graph
+
+IN the folder `bkg` I experiment with exporting the citations to RDF and loading that into a simple SQLite table that has the columns `s`, `p`, and `o`, i.e. a triple. Putting a crude linked data fragment server in front of that menas we can experiment with SPARQL queries.
+
+To fill out the data, I fetch CSL-JSON for the bibliographic DOIS and format it as simple RDF using the [schema.org](https://schema.org) vocabulary. I keep things simple by focusing on triples that link entities (e.g., papers to authors, funders, etc.) rather than aiming for a complete representation of the publications.
+
+### Preprints
+
+Note that CrossRef CSL-JSON includes information on whether an item is a pre-print or not, and it may have links to the published version of the work. I include these as `schema:seeAlso` links. 
+
+### Funding
+
+Funding is modelled following examples from [Grant](https://schema.org/Grant). For examle if we have no grant numbers we link direct to funder:
+
+```
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://doi.org/10.5061/dryad.m53r1",
+  "funder": {
+     "@type": "Organization",
+     "name": "National Science Foundation",
+     "identifier": "https://doi.org/10.13039/100000001"
+  }
+}
+```
+
+If we have a grant number then we can do something like this:
+
+```
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Turner, Caroline B.",
+  "givenName": "Caroline B.",
+  "familyName": "Turner",
+  "funding": {
+     "@type": "Grant",
+     "identifier": "1448821",
+     "funder": {
+       "@type": "Organization",
+       "name": "National Science Foundation",
+       "identifier": "https://doi.org/10.13039/100000001"
+     }
+   }
+}
+```
+
+Note that I use the funder DOIs directly as `@id`, rather than as `identifier`.
+
+### Queries
+
+#### Papers and preprints
+
+Link papers and preprints. Note that not all preprint DOIs are in the BOLD citations dataset, they may be simply mentioned in the CrossRef CSL-JSON I harvested fore the papers. Hence may lack titles. Hence the `OPTIONAL` queries. 
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://schema.org/>
+SELECT * WHERE {
+  ?x :seeAlso ?y .
+OPTIONAL {
+  ?x :name ?x_name .
+}
+OPTIONAL {
+  ?y :name ?y_name .
+}
+} 
+```
+
+#### Creators of a work
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://schema.org/>
+SELECT DISTINCT ?creator ?name WHERE {
+  VALUES ?work { <https://doi.org/10.3897/bdj.11.e100904> } .
+  ?work :creator ?creator .
+  {
+    ?creator :name ?name .
+  }
+  UNION
+  {
+    ?creator :familyName ?familyName .
+    ?creator :givenName ?givenName .
+    BIND(CONCAT(?givenName, " ", ?familyName) AS ?name)
+  }  
+ 
+} 
+
+```
+
+#### Funders of a work
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://schema.org/>
+SELECT * WHERE {
+  VALUES ?funder { <https://doi.org/10.13039/501100000196> } .
+  ?funder :name ?name .
+  
+  ?work :funder ?funder .
+  ?work :name ?title .
+} 
+
+```
 
 
 

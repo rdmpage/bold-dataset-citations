@@ -1,6 +1,6 @@
 <?php
 
-// Summarise results as list of URIs citing datasets
+// Summarise results as list of DOIs citing datasets
 
 require_once(dirname(__FILE__) . '/sqlite.php');
 
