@@ -1,8 +1,8 @@
 <?php
 
-// Export matches for manual screening
+// Get numbers of times datasets are cited
 
-require_once(dirname(__FILE__) . '/sqlite.php');
+require_once(dirname(dirname(__FILE__)) . '/sqlite.php');
 
 //----------------------------------------------------------------------------------------
 
@@ -11,6 +11,7 @@ $sql = 'SELECT * FROM cleaned';
 $data = db_get($sql);
 
 $datasets = array();
+
 
 
 foreach ($data as $row)
@@ -40,41 +41,26 @@ foreach ($data as $row)
 
 }
 
-$count_doi = 0;
-$count_link = 0;
-$count = 0;
+$values = array();
 
-$not_found = array();
-
-foreach ($datasets as $k => $dataset)
+foreach ($datasets as $k => $v)
 {
-	$count++;
+	$value = new stdclass;
+	$value->type = "data";
+	$value->doi = '10.5883/' . strtolower($k);
+	$value->citations = count($v->doi);
 	
-	$ok = false;
-	
-	if (count($dataset->url) > 0)
+	if ($value->citations > 0)
 	{
-		$count_link++;
-		$ok = true;
+		$values[] = $value;
 	}
-	
-	if (count($dataset->doi) > 0)
-	{
-		$count_doi++;
-		$ok = true;
-	}
-	
-	if (!$ok)
-	{
-		$not_found[$k] = $dataset;
-	}
-	
+
 }
 
-echo "$count datasets of which $count_link have links and $count_doi have DOIs\n";
 
-echo "Number of unmatched datasets is " . ($count - $count_link) . "\n";
+//print_r($values);
 
-//print_r($not_found);
+echo json_encode($values);
+
 
 ?>

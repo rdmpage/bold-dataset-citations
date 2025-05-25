@@ -58,11 +58,11 @@
 				SAEAAAAAAAAQ0AAABAAAAAAAAAD4AQCAHAIAAAAAAAA=
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/parse-gs-title.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/google-scholar/parse-gs-title.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./parse-gs-title.php</string>
+				<string>./google-scholar/parse-gs-title.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -81,38 +81,39 @@
 			<dict>
 				<key>BookmarkData</key>
 				<data>
-				Ym9vazADAAAAAAQQMAAAAJPqGehj22lvBvTCkrwjMCde
-				ELUXvQpbdrzc+KRRqp7nIAIAAAQAAAADAwAAAAgAKAUA
+				Ym9va1gDAAAAAAQQMAAAACw/g0H9x5MzZbZzqwVgIU59
+				SfpDuAwqbCbhjDVPgOaaSAIAAAQAAAADAwAAAAgAKAUA
 				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
 				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
-				YXNldC1jaXRhdGlvbnMAAAsAAAABAQAAc3VtbWFyeS5w
-				aHAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAZAAAAAgA
-				AAAEAwAAhFwAAAAAAAAIAAAABAMAAJbGAwAAAAAACAAA
-				AAQDAABZKSUAAAAAAAgAAAAEAwAA8lz+NgAAAAAIAAAA
-				BAMAAMr/ST4AAAAAFAAAAAEGAACUAAAApAAAALQAAADE
-				AAAA1AAAAAgAAAAABAAAQcbYkVYu2hgYAAAAAQIAAAEA
-				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
-				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-				AAAACAAAAAAEAABBxnee2oAAACQAAAABAQAARUVEQkM0
-				OTUtREY1Mi00NTZBLUI0MzEtRkI2MDdCRjA0QUQxGAAA
-				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAApTQ0ANgA
-				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
-				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
-				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
-				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
-				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
-				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
-				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				YXNldC1jaXRhdGlvbnMAAAYAAAABAQAAb3V0cHV0AAAL
+				AAAAAQEAAHN1bW1hcnkucGhwABgAAAABBgAAEAAAACAA
+				AAAwAAAARAAAAGQAAAB0AAAACAAAAAQDAACEXAAAAAAA
+				AAgAAAAEAwAAlsYDAAAAAAAIAAAABAMAAFkpJQAAAAAA
+				CAAAAAQDAADyXP42AAAAAAgAAAAEAwAAIp6xRAAAAAAI
+				AAAABAMAAMr/ST4AAAAAGAAAAAEGAACoAAAAuAAAAMgA
+				AADYAAAA6AAAAPgAAAAIAAAAAAQAAEHG2JFWLtoYGAAA
+				AAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAA
+				BAMAAAQAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABm
+				aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+				AAAAkIKW5wAAAAgAAAAABAAAQcZ3ntqAAAAkAAAAAQEA
+				AEVFREJDNDk1LURGNTItNDU2QS1CNDMxLUZCNjA3QkYw
+				NEFEMRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+				AAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEAAE5T
+				VVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5AAAEAAAAAwMA
+				AKU0NADYAAAA/v///wEAAAAAAAAAEQAAAAQQAACIAAAA
+				AAAAAAUQAAAIAQAAAAAAABAQAAA4AQAAAAAAAEAQAAAo
+				AQAAAAAAAAIgAAAEAgAAAAAAAAUgAAB0AQAAAAAAABAg
+				AACEAQAAAAAAABEgAAC4AQAAAAAAABIgAACYAQAAAAAA
+				ABMgAACoAQAAAAAAACAgAADkAQAAAAAAADAgAAAQAgAA
+				AAAAAAHAAABYAQAAAAAAABHAAAAgAAAAAAAAABLAAABo
+				AQAAAAAAABDQAAAEAAAAAAAAABgCAIA8AgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/summary.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/output/summary.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./summary.php</string>
+				<string>./output/summary.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -156,11 +157,11 @@
 				AAAAABDQAAAEAAAAAAAAAPQBAIAYAgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/harvest-gs.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/google-scholar/harvest-gs.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./harvest-gs.php</string>
+				<string>./google-scholar/harvest-gs.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -319,38 +320,40 @@
 			<dict>
 				<key>BookmarkData</key>
 				<data>
-				Ym9vazADAAAAAAQQMAAAAGvWBNWUv0tUGTphtM1gWPRV
-				024yWF+PNiRkeYVx0JR9IAIAAAQAAAADAwAAAAgAKAUA
+				Ym9va1wDAAAAAAQQMAAAABfCnBF/N6p/XJuoIZAJwLQy
+				q7sP5fhXtz5tnwE6Yz8nTAIAAAQAAAADAwAAAAgAKAUA
 				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
 				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
-				YXNldC1jaXRhdGlvbnMAAAsAAAABAQAAdXJsMmRvaS5w
-				aHAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAZAAAAAgA
-				AAAEAwAAhFwAAAAAAAAIAAAABAMAAJbGAwAAAAAACAAA
-				AAQDAABZKSUAAAAAAAgAAAAEAwAA8lz+NgAAAAAIAAAA
-				BAMAAP66gjgAAAAAFAAAAAEGAACUAAAApAAAALQAAADE
-				AAAA1AAAAAgAAAAABAAAQcbYkVYu2hgYAAAAAQIAAAEA
-				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
-				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-				AAAACAAAAAAEAABBxnee2oAAACQAAAABAQAARUVEQkM0
-				OTUtREY1Mi00NTZBLUI0MzEtRkI2MDdCRjA0QUQxGAAA
-				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAA/DM0ANgA
-				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
-				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
-				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
-				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
-				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
-				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
-				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				YXNldC1jaXRhdGlvbnMAAAwAAAABAQAAcHVibGljYXRp
+				b25zCwAAAAEBAAB1cmwyZG9pLnBocAAYAAAAAQYAABAA
+				AAAgAAAAMAAAAEQAAABkAAAAeAAAAAgAAAAEAwAAhFwA
+				AAAAAAAIAAAABAMAAJbGAwAAAAAACAAAAAQDAABZKSUA
+				AAAAAAgAAAAEAwAA8lz+NgAAAAAIAAAABAMAAKqesUQA
+				AAAACAAAAAQDAAD+uoI4AAAAABgAAAABBgAArAAAALwA
+				AADMAAAA3AAAAOwAAAD8AAAACAAAAAAEAABBxtiRVi7a
+				GBgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAA
+				CAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
+				CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgA
+				AAAEAwAAAJCClucAAAAIAAAAAAQAAEHGd57agAAAJAAA
+				AAEBAABFRURCQzQ5NS1ERjUyLTQ1NkEtQjQzMS1GQjYw
+				N0JGMDRBRDEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAA
+				AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAGgAAAAEB
+				AABOU1VSTERvY3VtZW50SWRlbnRpZmllcktleQAABAAA
+				AAMDAAD8MzQA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
+				jAAAAAAAAAAFEAAADAEAAAAAAAAQEAAAPAEAAAAAAABA
+				EAAALAEAAAAAAAACIAAACAIAAAAAAAAFIAAAeAEAAAAA
+				AAAQIAAAiAEAAAAAAAARIAAAvAEAAAAAAAASIAAAnAEA
+				AAAAAAATIAAArAEAAAAAAAAgIAAA6AEAAAAAAAAwIAAA
+				FAIAAAAAAAABwAAAXAEAAAAAAAARwAAAIAAAAAAAAAAS
+				wAAAbAEAAAAAAAAQ0AAABAAAAAAAAAAcAgCAQAIAAAAA
+				AAA=
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/url2doi.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/publications/url2doi.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./url2doi.php</string>
+				<string>./publications/url2doi.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -360,8 +363,6 @@
 			<string>url2doi.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
-			<key>UserOverrideItemName</key>
-			<true/>
 		</dict>
 		<key>6C59CD92-E41C-491C-8FDA-0A7D599FD23D</key>
 		<dict>
@@ -490,11 +491,11 @@
 				AAAAABDQAAAEAAAAAAAAAPQBAIAYAgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/parse-doi.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/datacite-harvest/parse-doi.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./parse-doi.php</string>
+				<string>./datacite-harvest/parse-doi.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -586,11 +587,11 @@
 				SAEAAAAAAAAQ0AAABAAAAAAAAAD4AQCAHAIAAAAAAAA=
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/harvest-gs-title.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/google-scholar/harvest-gs-title.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./harvest-gs-title.php</string>
+				<string>./google-scholar/harvest-gs-title.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -636,11 +637,11 @@
 				AAAAABDQAAAEAAAAAAAAAPQBAIAYAgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/harvest-dois.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/datacite-harvest/harvest-dois.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./harvest-dois.php</string>
+				<string>./datacite-harvest/harvest-dois.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -684,11 +685,11 @@
 				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/match.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/google-scholar/match.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./match.php</string>
+				<string>./google-scholar/match.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -734,11 +735,11 @@
 				AAAAABDQAAAEAAAAAAAAAPQBAIAYAgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/url2extract.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/publications/url2extract.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./url2extract.php</string>
+				<string>./publications/url2extract.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -755,38 +756,39 @@
 			<dict>
 				<key>BookmarkData</key>
 				<data>
-				Ym9vazADAAAAAAQQMAAAAFt53/jxoLxTuiirNRpkXB4P
-				BVyPsCl7jpiWiJmWY48XIAIAAAQAAAADAwAAAAgAKAUA
+				Ym9va1gDAAAAAAQQMAAAALSTYX6AmON3A+PMrnmeE1xf
+				GsZ+bqUKZNu1gDW7/iTESAIAAAQAAAADAwAAAAgAKAUA
 				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
 				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
-				YXNldC1jaXRhdGlvbnMAAAkAAAABAQAAY2hlY2sucGhw
-				AAAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAZAAAAAgA
-				AAAEAwAAhFwAAAAAAAAIAAAABAMAAJbGAwAAAAAACAAA
-				AAQDAABZKSUAAAAAAAgAAAAEAwAA8lz+NgAAAAAIAAAA
-				BAMAAD2iQz4AAAAAFAAAAAEGAACUAAAApAAAALQAAADE
-				AAAA1AAAAAgAAAAABAAAQcbnB+//N08YAAAAAQIAAAEA
-				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
-				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-				AAAACAAAAAAEAABBxnee2oAAACQAAAABAQAARUVEQkM0
-				OTUtREY1Mi00NTZBLUI0MzEtRkI2MDdCRjA0QUQxGAAA
-				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAAoTQ0ANgA
-				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
-				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
-				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
-				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
-				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
-				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
-				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				YXNldC1jaXRhdGlvbnMAAAYAAAABAQAAb3V0cHV0AAAJ
+				AAAAAQEAAGNoZWNrLnBocAAAABgAAAABBgAAEAAAACAA
+				AAAwAAAARAAAAGQAAAB0AAAACAAAAAQDAACEXAAAAAAA
+				AAgAAAAEAwAAlsYDAAAAAAAIAAAABAMAAFkpJQAAAAAA
+				CAAAAAQDAADyXP42AAAAAAgAAAAEAwAAIp6xRAAAAAAI
+				AAAABAMAAD2iQz4AAAAAGAAAAAEGAACoAAAAuAAAAMgA
+				AADYAAAA6AAAAPgAAAAIAAAAAAQAAEHG5wfv/zdPGAAA
+				AAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAA
+				BAMAAAQAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABm
+				aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+				AAAAkIKW5wAAAAgAAAAABAAAQcZ3ntqAAAAkAAAAAQEA
+				AEVFREJDNDk1LURGNTItNDU2QS1CNDMxLUZCNjA3QkYw
+				NEFEMRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+				AAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEAAE5T
+				VVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5AAAEAAAAAwMA
+				AKE0NADYAAAA/v///wEAAAAAAAAAEQAAAAQQAACIAAAA
+				AAAAAAUQAAAIAQAAAAAAABAQAAA4AQAAAAAAAEAQAAAo
+				AQAAAAAAAAIgAAAEAgAAAAAAAAUgAAB0AQAAAAAAABAg
+				AACEAQAAAAAAABEgAAC4AQAAAAAAABIgAACYAQAAAAAA
+				ABMgAACoAQAAAAAAACAgAADkAQAAAAAAADAgAAAQAgAA
+				AAAAAAHAAABYAQAAAAAAABHAAAAgAAAAAAAAABLAAABo
+				AQAAAAAAABDQAAAEAAAAAAAAABgCAIA8AgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/check.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/output/check.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./check.php</string>
+				<string>./output/check.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -796,8 +798,6 @@
 			<string>check.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
-			<key>UserOverrideItemName</key>
-			<true/>
 		</dict>
 		<key>DE04A85B-CAA8-4E09-864A-262E5F9A590A</key>
 		<dict>
@@ -832,11 +832,11 @@
 				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/parse-gs.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/google-scholar/parse-gs.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./parse-gs.php</string>
+				<string>./google-scholar/parse-gs.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -853,38 +853,39 @@
 			<dict>
 				<key>BookmarkData</key>
 				<data>
-				Ym9vazADAAAAAAQQMAAAADwIrTV8XWiu1fTexDE2MLQ2
-				RetVWRXqUhwGilGrOJlzIAIAAAQAAAADAwAAAAgAKAUA
+				Ym9va1gDAAAAAAQQMAAAAPFp2fbCEtj+wEVNmPvNndIu
+				rEoSEz7VzrI00C5caB1TSAIAAAQAAAADAwAAAAgAKAUA
 				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
 				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
-				YXNldC1jaXRhdGlvbnMAAAoAAAABAQAAZXhwb3J0LnBo
-				cAAAFAAAAAEGAAAQAAAAIAAAADAAAABEAAAAZAAAAAgA
-				AAAEAwAAhFwAAAAAAAAIAAAABAMAAJbGAwAAAAAACAAA
-				AAQDAABZKSUAAAAAAAgAAAAEAwAA8lz+NgAAAAAIAAAA
-				BAMAAAEvoTgAAAAAFAAAAAEGAACUAAAApAAAALQAAADE
-				AAAA1AAAAAgAAAAABAAAQcbYkVYu2hgYAAAAAQIAAAEA
-				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
-				AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
-				DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-				AAAACAAAAAAEAABBxnee2oAAACQAAAABAQAARUVEQkM0
-				OTUtREY1Mi00NTZBLUI0MzEtRkI2MDdCRjA0QUQxGAAA
-				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-				AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxEb2N1
-				bWVudElkZW50aWZpZXJLZXkAAAQAAAADAwAADzQ0ANgA
-				AAD+////AQAAAAAAAAARAAAABBAAAHgAAAAAAAAABRAA
-				AOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAA
-				AiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAA
-				AAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIAB
-				AAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAA
-				ADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAA
-				ENAAAAQAAAAAAAAA8AEAgBQCAAAAAAAA
+				YXNldC1jaXRhdGlvbnMAAAYAAAABAQAAb3V0cHV0AAAK
+				AAAAAQEAAGV4cG9ydC5waHAAABgAAAABBgAAEAAAACAA
+				AAAwAAAARAAAAGQAAAB0AAAACAAAAAQDAACEXAAAAAAA
+				AAgAAAAEAwAAlsYDAAAAAAAIAAAABAMAAFkpJQAAAAAA
+				CAAAAAQDAADyXP42AAAAAAgAAAAEAwAAIp6xRAAAAAAI
+				AAAABAMAAAEvoTgAAAAAGAAAAAEGAACoAAAAuAAAAMgA
+				AADYAAAA6AAAAPgAAAAIAAAAAAQAAEHG2JFWLtoYGAAA
+				AAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAA
+				BAMAAAQAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABm
+				aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+				AAAAkIKW5wAAAAgAAAAABAAAQcZ3ntqAAAAkAAAAAQEA
+				AEVFREJDNDk1LURGNTItNDU2QS1CNDMxLUZCNjA3QkYw
+				NEFEMRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+				AAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEAAE5T
+				VVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5AAAEAAAAAwMA
+				AA80NADYAAAA/v///wEAAAAAAAAAEQAAAAQQAACIAAAA
+				AAAAAAUQAAAIAQAAAAAAABAQAAA4AQAAAAAAAEAQAAAo
+				AQAAAAAAAAIgAAAEAgAAAAAAAAUgAAB0AQAAAAAAABAg
+				AACEAQAAAAAAABEgAAC4AQAAAAAAABIgAACYAQAAAAAA
+				ABMgAACoAQAAAAAAACAgAADkAQAAAAAAADAgAAAQAgAA
+				AAAAAAHAAABYAQAAAAAAABHAAAAgAAAAAAAAABLAAABo
+				AQAAAAAAABDQAAAEAAAAAAAAABgCAIA8AgAAAAAAAA==
 				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/export.php</string>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/output/export.php</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./export.php</string>
+				<string>./output/export.php</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>

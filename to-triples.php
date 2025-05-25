@@ -1,6 +1,6 @@
 <?php
 
-// Summarise results as triples work cites data
+// Summarise results as triples work -> cites -> data
 
 require_once(dirname(__FILE__) . '/sqlite.php');
 

@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO('sqlite:boldcite.db');
+$pdo = new PDO('sqlite:' . dirname(__FILE__) . '/boldcite.db');
 
 //----------------------------------------------------------------------------------------
 // retrieve data from database

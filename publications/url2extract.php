@@ -2,7 +2,7 @@
 
 // Extract DOi from URL
 
-require_once(dirname(__FILE__) . '/sqlite.php');
+require_once(dirname(dirname(__FILE__)) . '/sqlite.php');
 
 
 //----------------------------------------------------------------------------------------

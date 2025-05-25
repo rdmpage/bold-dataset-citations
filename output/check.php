@@ -3,7 +3,7 @@
 // Try and automate checking by loading manually checked dataset and resolving URls to papers,
 // then getting either HTML or DOI and lookign for dataset identifiers.
 
-require_once(dirname(__FILE__) . '/HtmlDomParser.php');
+require_once(dirname(dirname(__FILE__)) . '/HtmlDomParser.php');
 use Sunra\PhpSimple\HtmlDomParser;
 
 //----------------------------------------------------------------------------------------

@@ -10,9 +10,9 @@ Zeng, Tong, Longfeng Wu, Sarah Bratt, and Daniel E. Acuna. ‘Assigning Credit t
 
 ## BOLD datasets
 
-BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of these, I retrieved metadata from DataCite using their API (`harvest-dois.php`), parsed the resulkting JSON (`parse-dois.php`) and stored the results in the `dataset` table.
+BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of these, I retrieved metadata from DataCite using their API (`harvest-dois.php`), parsed the resulting JSON (`parse-dois.php`) and stored the results in the `dataset` table.
 
-I used Google Scholar to try and link these datasets to publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches on the dataset title (which was retrieved from DataCite) (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`.
+I used Google Scholar to attempt to link these datasets to relevant publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches on the dataset title (which was retrieved from DataCite) (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`.
 
 In the `citation` table the column `match` is “1” if the identifier string is found in the Google Scholar results, otherwise it is NULL. This is useful to filter potentially spurious results, but is also vulnerable to false positives, for example, if the dataset identifier resembles another term in the text, or an author name.
 
@@ -86,7 +86,7 @@ Note that CrossRef CSL-JSON includes information on whether an item is a pre-pri
 
 ### Funding
 
-Funding is modelled following examples from [Grant](https://schema.org/Grant). For examle if we have no grant numbers we link direct to funder:
+Funding is modelled following examples from [Grant](https://schema.org/Grant). For example if we have no grant numbers we link direct to funder:
 
 ```
 {
