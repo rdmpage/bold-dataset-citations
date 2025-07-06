@@ -53,5 +53,7 @@ foreach ($datasets as $k => $v)
 
 print_r($dois);
 
+echo '"' . join('","', $dois) . '"' . "\n";
+
 
 ?>

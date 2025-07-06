@@ -28,13 +28,26 @@ Note that `cleaned` is a subset of `dataset` as many datasets returned no result
 
 The table `publications` contains URLs from the Google Scholar results, and metadata extracted by resolving the URL using `url2doi.php` and looking at `<meta>` tags. An attempt was also made to extract DOIs from URLs using regular expressions in `url2extract.php`.
 
-### Output
+## Output
 
 The table `dataset` represents the data for BOLD datasets. The table `cleaned` represents a mapping between those datasets and papers that publish and/or cite those datasets.
 
+### CSV files
+
+### Data Citation Corpus format
+
+The file `data-citation-corpus.csv` contains the citations in the format required by the Data Citation Corpus, see https://docs.google.com/spreadsheets/d/18WyqWtOrM7L5K0ezImoiTR1U9edHJTFtQoFsE5b6BW4/edit?usp=sharing. This data is assembled in the table `data-citation-corpus` by a series of scripts:
+
+- `citations-to-data-citation-corpus.php` inserts the (dataset DOI, publication DOI) citation pairs, which are also the rimary keys. This data comes from the `cleaned` table.
+- `csl-to-data-citation-corpus.php` adds data on the publications sourced by resolving the publication DOIs and retrieving CSL-JSON. For preprints I use the `institution` field rather than the publisher field. Most publication DOIs are from CrossRef and so have detailed information, but some come from other providers. One DOI does not resolve (Zenodo used by BioOne).
+- `data-to-data-citation-corpus.php` adds information on the datasets sources from DataCite, such as title and sbjects. BOLD datasets have no information on creator affiliations or funders.
+
+
+### Triples (see below on knowledge graph)
+
 ## Examples
 
-### Searches that return dataset instead of citing work
+### Searches that return the dataset instead of the citing work
 
 DS-KINA https://cir.nii.ac.jp/crid/1880865118193612416
 
@@ -76,7 +89,7 @@ Some examples of manually matched records:
 
 ## Knowledge graph
 
-IN the folder `bkg` I experiment with exporting the citations to RDF and loading that into a simple SQLite table that has the columns `s`, `p`, and `o`, i.e. a triple. Putting a crude linked data fragment server in front of that menas we can experiment with SPARQL queries.
+In the folder `bkg` I experiment with exporting the citations to RDF and loading that into a simple SQLite table that has the columns `s`, `p`, and `o`, i.e. a triple. Putting a crude linked data fragment server in front of that menas we can experiment with SPARQL queries.
 
 To fill out the data, I fetch CSL-JSON for the bibliographic DOIS and format it as simple RDF using the [schema.org](https://schema.org) vocabulary. I keep things simple by focusing on triples that link entities (e.g., papers to authors, funders, etc.) rather than aiming for a complete representation of the publications.
 
