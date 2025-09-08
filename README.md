@@ -45,11 +45,13 @@ The table `dataset` represents the data for BOLD datasets. The table `cleaned` r
 
 ### CSV files
 
+The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting DOIs, Handles, URNs, and URLs where they are available.
+
 ### Data Citation Corpus format
 
 The file `data-citation-corpus.csv` contains the citations in the format required by the Data Citation Corpus, see https://docs.google.com/spreadsheets/d/18WyqWtOrM7L5K0ezImoiTR1U9edHJTFtQoFsE5b6BW4/edit?usp=sharing. This data is assembled in the table `data-citation-corpus` by a series of scripts:
 
-- `citations-to-data-citation-corpus.php` inserts the (dataset DOI, publication DOI) citation pairs, which are also the rimary keys. This data comes from the `cleaned` table.
+- `citations-to-data-citation-corpus.php` inserts the (dataset DOI, publication DOI) citation pairs, which are also the primary keys. This data comes from the `cleaned` table.
 - `csl-to-data-citation-corpus.php` adds data on the publications sourced by resolving the publication DOIs and retrieving CSL-JSON. For preprints I use the `institution` field rather than the publisher field. Most publication DOIs are from CrossRef and so have detailed information, but some come from other providers. One DOI does not resolve (Zenodo used by BioOne).
 - `data-to-data-citation-corpus.php` adds information on the datasets sources from DataCite, such as title and sbjects. BOLD datasets have no information on creator affiliations or funders.
 
