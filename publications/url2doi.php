@@ -55,16 +55,26 @@ function get($url, $accept = "text/html")
 
 $sql = 'SELECT * FROM citation WHERE url IS NOT NULL';
 
+// ones we missed
+$sql = 'SELECT * FROM citation WHERE flag = 1';
+
 $data = db_get($sql);
 
 foreach ($data as $row)
 {
+	print_r($row);
+
 	$url = $row->url;
 	
 	$go = true;
 
 	if ($go)
 	{
+		echo "URL=$url\n";
+		
+		$url = preg_replace('/\/download\/pdf\/?/', '', $url);
+		$url = preg_replace('/\/download\/(\d+)\/(\d+)/', '/view/$1', $url);
+		
 		echo "\nURL=$url\n\n";
 	
 		$html = get($url);
@@ -235,6 +245,11 @@ foreach ($data as $row)
 			echo $pub_sql . "\n";
 			
 			db_put($pub_sql);
+			
+			if (isset ($source->doi))
+			{
+				echo 'UPDATE citation SET doi="' . $source->doi . '" WHERE id="' . $row->id . '";' . "\n";
+			}
 			
 		}
 
