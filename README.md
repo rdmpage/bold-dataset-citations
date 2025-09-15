@@ -45,7 +45,11 @@ The table `dataset` represents the data for BOLD datasets. The table `cleaned` r
 
 ### CSV files
 
-The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting DOIs, Handles, URNs, and URLs where they are available.
+The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting DOIs, Handles, URNs, and URLs where they are available. To generate an updated file of citations:
+
+```
+php citations-to-csv.php > results/citations.csv
+```
 
 ### Data Citation Corpus format
 
