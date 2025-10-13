@@ -22,6 +22,16 @@
 		<string>633545EA-EE4E-443D-BCFF-42D2D2264508</string>
 		<string>CE46CFE7-6A9D-467E-A389-43E7CB5E457B</string>
 		<string>4B8FE918-92F1-426B-8D75-032598583CC4</string>
+		<dict>
+			<key>CollectionID</key>
+			<string>49A3B43C-C456-4D4A-89CD-25C76F4217F2</string>
+			<key>CollectionItems</key>
+			<array>
+				<string>96FDFF95-0EF1-481B-B8E6-989DE83298F8</string>
+				<string>8B545BA1-5DEF-4394-946C-EED8E4A2B646</string>
+				<string>A341F612-7B03-483A-B326-D02160B85F76</string>
+			</array>
+		</dict>
 	</array>
 	<key>ProjectItems</key>
 	<dict>
@@ -219,6 +229,15 @@
 			<string>to-doi-citations.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
+		</dict>
+		<key>49A3B43C-C456-4D4A-89CD-25C76F4217F2</key>
+		<dict>
+			<key>ItemData</key>
+			<array/>
+			<key>ItemName</key>
+			<string>datacite</string>
+			<key>ItemType</key>
+			<string>StaticCollection</string>
 		</dict>
 		<key>4B8FE918-92F1-426B-8D75-032598583CC4</key>
 		<dict>
@@ -458,6 +477,57 @@
 			<key>ItemType</key>
 			<string>FileReference</string>
 		</dict>
+		<key>8B545BA1-5DEF-4394-946C-EED8E4A2B646</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va0QDAAAAAAQQMAAAAPBmVmX0cfgqFJJUa64Sd/Lf
+				cfn121HKsCi61uyUp+MVNAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
+				YXNldC1jaXRhdGlvbnMAAB8AAAABAQAAY3NsLXRvLWRh
+				dGEtY2l0YXRpb24tY29ycHVzLnBocAAUAAAAAQYAABAA
+				AAAgAAAAMAAAAEQAAABkAAAACAAAAAQDAACEXAAAAAAA
+				AAgAAAAEAwAAlsYDAAAAAAAIAAAABAMAAFkpJQAAAAAA
+				CAAAAAQDAADyXP42AAAAAAgAAAAEAwAAKFDGRwAAAAAU
+				AAAAAQYAAKgAAAC4AAAAyAAAANgAAADoAAAACAAAAAAE
+				AABBxwwWLH7iLhgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+				AAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA
+				9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
+				dG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG
+				d57agAAAJAAAAAEBAABFRURCQzQ5NS1ERjUyLTQ1NkEt
+				QjQzMS1GQjYwN0JGMDRBRDEYAAAAAQIAAIEAAAABAAAA
+				7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAAB
+				BQAAGgAAAAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
+				cktleQAABAAAAAMDAAAHODQA2AAAAP7///8BAAAAAAAA
+				ABEAAAAEEAAAjAAAAAAAAAAFEAAA+AAAAAAAAAAQEAAA
+				JAEAAAAAAABAEAAAFAEAAAAAAAACIAAA8AEAAAAAAAAF
+				IAAAYAEAAAAAAAAQIAAAcAEAAAAAAAARIAAApAEAAAAA
+				AAASIAAAhAEAAAAAAAATIAAAlAEAAAAAAAAgIAAA0AEA
+				AAAAAAAwIAAA/AEAAAAAAAABwAAARAEAAAAAAAARwAAA
+				IAAAAAAAAAASwAAAVAEAAAAAAAAQ0AAABAAAAAAAAAAE
+				AgCAKAIAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/csl-to-data-citation-corpus.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./csl-to-data-citation-corpus.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>csl-to-data-citation-corpus.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
 		<key>8D1D3C8B-E1C5-43DE-A259-718FB25D781D</key>
 		<dict>
 			<key>ItemData</key>
@@ -505,6 +575,108 @@
 			<string>parse-doi.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
+		</dict>
+		<key>96FDFF95-0EF1-481B-B8E6-989DE83298F8</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va0wDAAAAAAQQMAAAANVhkFpK/wHMos2FN0mfPTZH
+				XNOuz05FptUwVnYO/Qd3PAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
+				YXNldC1jaXRhdGlvbnMAACUAAAABAQAAY2l0YXRpb25z
+				LXRvLWRhdGEtY2l0YXRpb24tY29ycHVzLnBocAAAABQA
+				AAABBgAAEAAAACAAAAAwAAAARAAAAGQAAAAIAAAABAMA
+				AIRcAAAAAAAACAAAAAQDAACWxgMAAAAAAAgAAAAEAwAA
+				WSklAAAAAAAIAAAABAMAAPJc/jYAAAAACAAAAAQDAADt
+				thBIAAAAABQAAAABBgAAsAAAAMAAAADQAAAA4AAAAPAA
+				AAAIAAAAAAQAAEHHDBYsfuIuGAAAAAECAAABAAAAAAAA
+				AA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAA
+				BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAAB
+				AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
+				AAAABAAAQcZ3ntqAAAAkAAAAAQEAAEVFREJDNDk1LURG
+				NTItNDU2QS1CNDMxLUZCNjA3QkYwNEFEMRgAAAABAgAA
+				gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAv
+				AAAAAAAAAAEFAAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJ
+				ZGVudGlmaWVyS2V5AAAEAAAAAwMAAC04NADYAAAA/v//
+				/wEAAAAAAAAAEQAAAAQQAACUAAAAAAAAAAUQAAAAAQAA
+				AAAAABAQAAAsAQAAAAAAAEAQAAAcAQAAAAAAAAIgAAD4
+				AQAAAAAAAAUgAABoAQAAAAAAABAgAAB4AQAAAAAAABEg
+				AACsAQAAAAAAABIgAACMAQAAAAAAABMgAACcAQAAAAAA
+				ACAgAADYAQAAAAAAADAgAAAEAgAAAAAAAAHAAABMAQAA
+				AAAAABHAAAAgAAAAAAAAABLAAABcAQAAAAAAABDQAAAE
+				AAAAAAAAAAwCAIAwAgAAAAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/citations-to-data-citation-corpus.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./citations-to-data-citation-corpus.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>citations-to-data-citation-corpus.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>A341F612-7B03-483A-B326-D02160B85F76</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va0QDAAAAAAQQMAAAAHKyzWzzcF3HLMGNn64Cr1hi
+				n89Mk+3JNC+RgaaFXCFSNAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
+				YXNldC1jaXRhdGlvbnMAACAAAAABAQAAZGF0YS10by1k
+				YXRhLWNpdGF0aW9uLWNvcnB1cy5waHAUAAAAAQYAABAA
+				AAAgAAAAMAAAAEQAAABkAAAACAAAAAQDAACEXAAAAAAA
+				AAgAAAAEAwAAlsYDAAAAAAAIAAAABAMAAFkpJQAAAAAA
+				CAAAAAQDAADyXP42AAAAAAgAAAAEAwAAMTPGRwAAAAAU
+				AAAAAQYAAKgAAAC4AAAAyAAAANgAAADoAAAACAAAAAAE
+				AABBxwwWLH7iLhgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+				AAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA
+				9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
+				dG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG
+				d57agAAAJAAAAAEBAABFRURCQzQ5NS1ERjUyLTQ1NkEt
+				QjQzMS1GQjYwN0JGMDRBRDEYAAAAAQIAAIEAAAABAAAA
+				7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAAB
+				BQAAGgAAAAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
+				cktleQAABAAAAAMDAAADODQA2AAAAP7///8BAAAAAAAA
+				ABEAAAAEEAAAjAAAAAAAAAAFEAAA+AAAAAAAAAAQEAAA
+				JAEAAAAAAABAEAAAFAEAAAAAAAACIAAA8AEAAAAAAAAF
+				IAAAYAEAAAAAAAAQIAAAcAEAAAAAAAARIAAApAEAAAAA
+				AAASIAAAhAEAAAAAAAATIAAAlAEAAAAAAAAgIAAA0AEA
+				AAAAAAAwIAAA/AEAAAAAAAABwAAARAEAAAAAAAARwAAA
+				IAAAAAAAAAASwAAAVAEAAAAAAAAQ0AAABAAAAAAAAAAE
+				AgCAKAIAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/data-to-data-citation-corpus.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./data-to-data-citation-corpus.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>data-to-data-citation-corpus.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
 		</dict>
 		<key>B06244D6-5146-465C-9790-DEC311CDE585</key>
 		<dict>

@@ -147,8 +147,13 @@ function csl_to_quads($csl)
 		
 		if ($name != '')
 		{
+			// clean
+			$name = preg_replace('/\R/u', ' ', $name);	
+			$name = preg_replace('/\s\s+/', ' ', $name);	
+				
 			$p = 'http://schema.org/name';
 			$o = '"' . $name . '"';
+			
 			
 			$quads[] = array($s, $p, $o);
 		}
@@ -1458,6 +1463,10 @@ $dois=array(
 '10.7717/peerj.9989',
 '10.7818/ECOS.2016.25-2.09',
 '10.5194/bg-17-865-2020',
+);
+
+$dois=array(
+'10.1080/24750263.2024.2409152'
 );
 
 foreach ($dois as $doi)
