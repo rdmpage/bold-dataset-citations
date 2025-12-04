@@ -32,6 +32,15 @@
 				<string>A341F612-7B03-483A-B326-D02160B85F76</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CollectionID</key>
+			<string>35163A30-B25A-42D5-A78D-E54E77237FC2</string>
+			<key>CollectionItems</key>
+			<array>
+				<string>A2C5E626-9EC7-42FE-AA51-180A8DB1E496</string>
+				<string>892DE5C9-C111-4E99-B9E6-7FAED82C2554</string>
+			</array>
+		</dict>
 	</array>
 	<key>ProjectItems</key>
 	<dict>
@@ -133,6 +142,15 @@
 			<string>summary.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
+		</dict>
+		<key>35163A30-B25A-42D5-A78D-E54E77237FC2</key>
+		<dict>
+			<key>ItemData</key>
+			<array/>
+			<key>ItemName</key>
+			<string>RDF</string>
+			<key>ItemType</key>
+			<string>StaticCollection</string>
 		</dict>
 		<key>3DF0FBB8-DE32-4429-905F-0D3133286CDF</key>
 		<dict>
@@ -477,6 +495,57 @@
 			<key>ItemType</key>
 			<string>FileReference</string>
 		</dict>
+		<key>892DE5C9-C111-4E99-B9E6-7FAED82C2554</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va0gDAAAAAAQQMAAAAG3opEcWM012vjMCS8twNMll
+				oEAPhSSjEV22ot4UHQiBOAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
+				YXNldC1jaXRhdGlvbnMAACIAAAABAQAAZGF0YXNldC1j
+				aXRhdGlvbi10by1zY2hlbWEtcmRmLnBocAAAFAAAAAEG
+				AAAQAAAAIAAAADAAAABEAAAAZAAAAAgAAAAEAwAAhFwA
+				AAAAAAAIAAAABAMAAJbGAwAAAAAACAAAAAQDAABZKSUA
+				AAAAAAgAAAAEAwAA8lz+NgAAAAAIAAAABAMAAJd9vYcA
+				AAAAFAAAAAEGAACsAAAAvAAAAMwAAADcAAAA7AAAAAgA
+				AAAABAAAQccMFix+4i4YAAAAAQIAAAEAAAAAAAAADwAA
+				AAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAA
+				AwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABN
+				YWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAE
+				AABBxnee2oAAACQAAAABAQAARUVEQkM0OTUtREY1Mi00
+				NTZBLUI0MzEtRkI2MDdCRjA0QUQxGAAAAAECAACBAAAA
+				AQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAA
+				AAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50
+				aWZpZXJLZXkAAAQAAAADAwAAtEE0ANgAAAD+////AQAA
+				AAAAAAARAAAABBAAAJAAAAAAAAAABRAAAPwAAAAAAAAA
+				EBAAACgBAAAAAAAAQBAAABgBAAAAAAAAAiAAAPQBAAAA
+				AAAABSAAAGQBAAAAAAAAECAAAHQBAAAAAAAAESAAAKgB
+				AAAAAAAAEiAAAIgBAAAAAAAAEyAAAJgBAAAAAAAAICAA
+				ANQBAAAAAAAAMCAAAAACAAAAAAAAAcAAAEgBAAAAAAAA
+				EcAAACAAAAAAAAAAEsAAAFgBAAAAAAAAENAAAAQAAAAA
+				AAAACAIAgCwCAAAAAAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/dataset-citation-to-schema-rdf.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./dataset-citation-to-schema-rdf.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>dataset-citation-to-schema-rdf.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
 		<key>8B545BA1-5DEF-4394-946C-EED8E4A2B646</key>
 		<dict>
 			<key>ItemData</key>
@@ -622,6 +691,57 @@
 			</dict>
 			<key>ItemName</key>
 			<string>citations-to-data-citation-corpus.php</string>
+			<key>ItemType</key>
+			<string>FileReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+		<key>A2C5E626-9EC7-42FE-AA51-180A8DB1E496</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va0ADAAAAAAQQMAAAAIM+fmH2Nbb4TGNzObOdQyzU
+				TQ5G2KDiggcVpn/MgyRmMAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
+				YXNldC1jaXRhdGlvbnMAABkAAAABAQAAZGF0YXNldC10
+				by1zY2hlbWEtcmRmLnBocAAAABQAAAABBgAAEAAAACAA
+				AAAwAAAARAAAAGQAAAAIAAAABAMAAIRcAAAAAAAACAAA
+				AAQDAACWxgMAAAAAAAgAAAAEAwAAWSklAAAAAAAIAAAA
+				BAMAAPJc/jYAAAAACAAAAAQDAADCYKOGAAAAABQAAAAB
+				BgAApAAAALQAAADEAAAA1AAAAOQAAAAIAAAAAAQAAEHH
+				DBYsfuIuGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAA
+				AAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAA
+				CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+				IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcZ3ntqA
+				AAAkAAAAAQEAAEVFREJDNDk1LURGNTItNDU2QS1CNDMx
+				LUZCNjA3QkYwNEFEMRgAAAABAgAAgQAAAAEAAADvEwAA
+				AQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAa
+				AAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5
+				AAAEAAAAAwMAALNBNADYAAAA/v///wEAAAAAAAAAEQAA
+				AAQQAACIAAAAAAAAAAUQAAD0AAAAAAAAABAQAAAgAQAA
+				AAAAAEAQAAAQAQAAAAAAAAIgAADsAQAAAAAAAAUgAABc
+				AQAAAAAAABAgAABsAQAAAAAAABEgAACgAQAAAAAAABIg
+				AACAAQAAAAAAABMgAACQAQAAAAAAACAgAADMAQAAAAAA
+				ADAgAAD4AQAAAAAAAAHAAABAAQAAAAAAABHAAAAgAAAA
+				AAAAABLAAABQAQAAAAAAABDQAAAEAAAAAAAAAAACAIAk
+				AgAAAAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/dataset-to-schema-rdf.php</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./dataset-to-schema-rdf.php</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>dataset-to-schema-rdf.php</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
 			<key>UserOverrideItemName</key>

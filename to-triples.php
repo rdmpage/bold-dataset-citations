@@ -12,8 +12,6 @@ $data = db_get($sql);
 
 $datasets = array();
 
-
-
 foreach ($data as $row)
 {
 	//print_r($row);
@@ -38,7 +36,6 @@ foreach ($data as $row)
 		}
 	}
 	
-
 }
 
 $triples = array();
@@ -57,8 +54,6 @@ foreach ($datasets as $k => $v)
 
 }
 
-
 print_r($triples);
-
 
 ?>

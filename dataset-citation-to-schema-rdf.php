@@ -1,6 +1,7 @@
 <?php
 
-// Export citations of datasets in RDF
+// Export citations of datasets in RDF. Citations are linked to the DOI for the dataset,
+// consustent with the Data Citation Corpus
 
 require_once(dirname(__FILE__) . '/sqlite.php');
 
@@ -11,7 +12,6 @@ $sql = 'SELECT * FROM cleaned ORDER BY Dataset';
 $data = db_get($sql);
 
 $datasets = array();
-
 
 foreach ($data as $row)
 {
@@ -26,6 +26,7 @@ foreach ($data as $row)
 		$datasets[$row->Dataset]->urn = [];
 	}
 	
+	// Filter by matches that are accepted
 	if (isset($row->Accept) && preg_match('/^Y/', $row->Accept))
 	{
 		if (isset($row->url))
@@ -83,7 +84,7 @@ foreach ($datasets as $k => $v)
 	{
 		if ($v->doi[$i] != '')
 		{
-			// work DOI cites dataset DOI
+			// work with DOI cites dataset DOI
 			$triple = array(
 				'<https://doi.org/' . strtolower($v->doi[$i]) . '>',
 				'<http://schema.org/citation>',
@@ -94,7 +95,7 @@ foreach ($datasets as $k => $v)
 		}
 		elseif ($v->handle[$i] != '')
 		{
-			// work Handle cites dataset DOI
+			// work with Handle cites dataset DOI
 			$triple = array(
 				'<https://hdl.handle.net/' . strtolower($v->handle[$i]) . '>',
 				'<http://schema.org/citation>',
@@ -105,7 +106,7 @@ foreach ($datasets as $k => $v)
 		}
 		elseif ($v->url[$i] != '')
 		{
-			// work URL cites dataset DOI
+			// work with URL cites dataset DOI
 			$triple = array(
 				'<' . $v->url[$i] . '>',
 				'<http://schema.org/citation>',
@@ -116,7 +117,7 @@ foreach ($datasets as $k => $v)
 		}
 		elseif ($v->urn[$i] != '')
 		{
-			// work URN cites dataset DOI
+			// work with URN cites dataset DOI
 			$triple = array(
 				'<' . $v->urn[$i] . '>',
 				'<http://schema.org/citation>',
@@ -135,6 +136,4 @@ foreach ($datasets as $k => $v)
 
 }
 
-
 ?>
-
