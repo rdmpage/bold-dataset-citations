@@ -50,6 +50,15 @@ foreach ($data as $row)
 		'"' . addcslashes($row->name, '"') . '"'
 	);
 	
+	// add name to DOI for convenience in outputting query results(?)
+	/*
+	$triple = array(
+		'<https://doi.org/' . $row->doi . '>',
+		'<http://schema.org/name>',
+		'"' . addcslashes($row->name, '"') . '"'
+	);
+	*/
+	
 	$triples[] = $triple;
 	
 	// for ease of querying add the BOLD dataset id as alternateName,
