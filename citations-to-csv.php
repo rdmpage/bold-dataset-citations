@@ -1,6 +1,6 @@
 <?php
 
-// Seed the table with the citation pairs
+// Simple dump of accepted database citations and their identifiers
 
 require_once(dirname(__FILE__) . '/sqlite.php');
 
@@ -100,4 +100,3 @@ foreach ($datasets as $k => $v)
 
 
 ?>
-

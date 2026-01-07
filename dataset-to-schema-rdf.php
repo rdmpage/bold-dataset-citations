@@ -51,13 +51,11 @@ foreach ($data as $row)
 	);
 	
 	// add name to DOI for convenience in outputting query results(?)
-	/*
 	$triple = array(
 		'<https://doi.org/' . $row->doi . '>',
 		'<http://schema.org/name>',
 		'"' . addcslashes($row->name, '"') . '"'
 	);
-	*/
 	
 	$triples[] = $triple;
 	
