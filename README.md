@@ -19,23 +19,24 @@ BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of the
 
 I used Google Scholar to attempt to link these datasets to relevant publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches on the dataset title (which was retrieved from DataCite) (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`.
 
-In the `citation` table the column `match` is “1” if the identifier string is found in the Google Scholar results, otherwise it is NULL. This is useful to filter out potentially spurious results, but is also vulnerable to false positives, for example, if the dataset identifier resembles another term in the text, or an author name.
+In the `citation` table the column `match` is “1” if the identifier string is found in the Google Scholar results, otherwise it is NULL. This is useful for filtering out potentially spurious results, but it is also vulnerable to false positives if, for example, the dataset identifier resembles another term in the text or an author’s name.
 
 To help filter matches based on dataset name I computed the Levenshtein distance between the dataset title and the article title(s) returned by Google Scholar using `match.php` and stored this in the `score` field in the `citation` table. This test is also error-prone. It can miss titles that are clearly related but differ in word order, and it will fail if the language of the article is different from that of the dataset. Because the datasets themselves have been indexed by some of Google Scholar’s sources, it is also possible that the Google Scholar search result is the dataset itself.
 
-Once the two searches were complete the results were examined using the two criteria above (presence of dataset identifier, match to dataset title). Once clear examples of matches were identified using these methods, the remaining results were manually inspected. The column `accepted` records a match that is deemed to be correct. The data to be manually checked was exported using `export.php` and loaded into a Google Sheet.
+Once the two searches were complete, the results were examined using the two criteria above (presence of dataset identifier, match to dataset title). Once clear examples of matches were identified using these methods, the remaining results were manually inspected. The column `accepted` records a match that is deemed to be correct. The data to be manually checked was exported using `export.php` and loaded into a Google Sheet.
 
-After the Google sheet was edited, it was added to the SQL dataset as the table `cleaned`. This table was run through further automated checking using `check.php`. URLs that hadn’t been accepted or rejected were resolved, and the name of the dataset was looked for in either the HTML or PDF for the article.
+After the Google sheet was edited, it was added to the SQL dataset as the table `cleaned`. This table was subject to further automated checking using `check.php`. URLs that hadn’t been accepted or rejected were resolved, and the “DS-*” identifier for the dataset was looked for in either the HTML or PDF for the article.
 
-The table `cleaned` was then manually checked one more time, and declared to be “complete”, knowing that there are obviously still gaps. The script `summary.php` is used to summarise and explore the results.
+The table `cleaned` was then manually checked again, and declared to be “complete”, knowing that there are obviously still gaps. The script `summary.php` is used to summarise and explore the results.
 
 Note that `cleaned` is a subset of `dataset` as many datasets returned no result when searched for on Google Scholar.
 
 The table `publications` contains URLs from the Google Scholar results, and metadata extracted by resolving the URL using `url2doi.php` and looking at `<meta>` tags. An attempt was also made to extract DOIs from URLs using regular expressions in `url2extract.php`.
 
+
 ### Missed datasets with no DOIs
 
-From comment on blog post this paper (https://doi.org/10.1163/15685381-bja10148) cites data that is not in my database. The datasets don’t have DOIs and hence weren’t included.
+From a comment on the blog post, this paper (https://doi.org/10.1163/15685381-bja10148) cites data that is not in my database. The datasets don’t have DOIs and hence weren’t included.
 
 > For the purposes of this study, we defined the Western Palearctic region as depicted in fig. 1, based on previous studies (Duellman and Trueb, 1986; Borkin, 1999; Borkin and Litvinchuk, 2013, 2014). We compiled a total of 1251 sequences, which are organised in BOLD projects DS-AMWPA and DS-AMWPC at www.boldsystems.org for Anura and Caudata, respectively, and includes 60 urodele species and 73 anuran species (belonging to 18 and 16 genera, respectively; supplementary table S1). DS-AMWPA includes 691 sequences, of which 525 (76%) were generated for this study and previously organised in separate BOLD subprojects managed by coauthors on this manuscript (ABAAP, ABCAP, AMWP, IMSAM, ZHABI), as well as 166 sequences (24%) mined from GenBank and other BOLD projects (GBAP, FBHER; supplementary table S2). DS-AMWPC includes 560 sequences, of which 452 (81%) were generated by our team and previously organised in separate BOLD subprojects (ABCAP, AMWP, IMSAM, ZHABI, CABM), as well as 108 sequences (19%) mined from GenBank and other BOLD projects (GBAP, FBHER; supplementary table S3). New sequences were obtained through sequenced DNA barcodes from the collection of tissue samples from different field projects and scientific collections. From the sequences mined from GenBank, we removed those sequences that clearly represent taxonomic misidentifications. Our sampling paid particular focus to the southern climatic refugia in the Western Palearctic (southern European peninsulas and Mediterranean ecosystems in North Africa and the Near East; fig. 1), which constitute biodiversity hotspots for this taxonomic group and in which most of the intraspecific diversity occurs. The taxonomic framework used followed Speybroeck et al. (2020) as a reference. For further details on species ranges and samples used in this reference library, see supplemental material.
 
@@ -47,6 +48,33 @@ Sometimes papers include links to other, related versions of the data.
 |-- | -- |
 | 10.5883/DS-CHIRI | https://doi.org/10.5061/dryad.rjdfn2z9b | Dryad, which has JSON-LD, link to DS-CHIRI is in the HTML but not the RDF embedded in the site. However it is in the JSON metadata from Datacite https://api.datacite.org/dois/10.5061/dryad.rjdfn2z9b |
 | DS-BIBART | https://doi.org/10.5063/F11J9874 | KNB, the KNB link is mentioned in the paper, KNB web page has embedded JSON-LD in `<HEAD>`, quite sophisticated. The dataset itself has lots of images, etc. (my copy of BOLD is missing these!). No link to paper or BOLD. | 
+
+### Matching based on title only
+
+Matching using Google Scholar assumes that the full text of a publication has been indexed, and that the BOLD dataset is mentioned in the text in the form “DS-xxx”. These are flaged as “explicit” matches. There were numerous cases of publications with the same (or similar) titles as the database name, but which the Google Scholar search did not regard as a match.
+
+Hence, I searched CrossRef for a work with a title closely matching the name of the database. If found, the match between Dataset DOI and publication DOI was stored in the `cleaned` table, flagged as `Y crossref` and as not an explicit match. These could then be reviewed manually to check that they did explicitly or implicitly refer to the dataset.
+
+In some cases the database title registered with DataCite did not match that stored in BOLD, e.g. DS-ANTSP18 which in DataCite has the title “Ancient landscapes of the Namib Desert harbour high levels of genetic variability and deeply divergent lineages for Collembola” but is cited in the paper 10.3389/fevo.2019.00076 on Antarctic springtails.
+
+
+## Views
+
+### cited_work_doi
+
+List of unique DOIs of works that cite datasets.
+
+### matches_no_doi
+
+List of URLs for publications that lack DOIs
+
+### matches_not_in_cleaned
+
+Matches between dataset names and publications that are not in the `cleaned` table. This should be empty, so anything in this view should be checked and added to `cleaned`.
+
+### not_matched
+
+Datasets that have not been added to the `cleaned` table as they have no matches.
 
 ## Output
 
@@ -79,7 +107,7 @@ DS-KINA https://cir.nii.ac.jp/crid/1880865118193612416
 
 ### Searches returning theses and preprints
 
-Some searches return thesis and preprints.
+Some searches return thesis or preprints.
 
 https://edoc.ub.uni-muenchen.de/27000/ has a DOI for thesis in the body but not header.
 
@@ -96,21 +124,6 @@ https://bold-view-bf2dfe9b0db3.herokuapp.com/?recordset=DS-ABSKMA matches https:
 ### Cites lots of BOLD datasets
 
 https://doi.org/10.1371/journal.pone.0116612
-
-### Manual matching
-
-Some examples of manually matched records:
-
-| Dataset | Citation | Comment |
-|--|--|--|
-| DS-ANIC1A | 10.1007/978-3-031-32103-0_1 | citation |
-| DS-ANIC1B | 10.1007/978-3-031-32103-0_1 | citation |
-| DS-ASNBPAR | 10.1111/afe.12508 | |
-| DS-ASNBPAR | 10.32942/osf.io/mdua8 | preprint |
-| 10.5883/DS-CNEPETA |10.57065/shilap.651 |  |
-| 10.5883/DS-DRYLOJA | 10.7818/ECOS.2016.25-2.09 |  |
-| 10.5883/DS-EBER | 10.1051/kmae/2020038 |  |
-| 10.5883/DS-MERGALBE | http://www.nw-ornithologen.de/images/textfiles/charadrius/charadrius51_57_62_Klein_etal_ErstbrutnachweisZwergsaegerDeutschland.pdf | |
 
 
 ## Knowledge graph
