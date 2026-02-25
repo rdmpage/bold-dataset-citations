@@ -4,8 +4,8 @@
 <dict>
 	<key>EmbeddedEditorHidden:rpage</key>
 	<false/>
-	<key>ExpandedEditorWidth:rpage:displays([(0, 0), (1512, 982)])</key>
-	<integer>657</integer>
+	<key>ExpandedEditorWidth:rpage:displays([(0, 0), (1512, 982)]:[(-1600, 0), (1600, 900)])</key>
+	<integer>826</integer>
 	<key>ExpandedItems:rpage</key>
 	<array>
 		<string>6296B705-6449-498C-8C1B-AC61D1027B7E</string>
@@ -19,33 +19,35 @@
 		<dict>
 			<key>BookmarkData</key>
 			<data>
-			Ym9va/ACAAAAAAQQMAAAALTu/yoVX1ajUYJC0e3KhL0OaW73mjrJ
-			JAE/+25nqV7G7AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
+			Ym9va0ADAAAAAAQQMAAAADcRbRRwRr5Ca873pQ5+hVbS8IQSGM/3
+			5t960CiSV7hOMAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
 			AAAFAAAAAQEAAHJwYWdlAAAACwAAAAEBAABEZXZlbG9wbWVudAAW
-			AAAAAQEAAGJvbGQtZGF0YXNldC1jaXRhdGlvbnMAAAcAAAABAQAA
-			bGNzLnBocAAUAAAAAQYAABAAAAAgAAAAMAAAAEQAAABkAAAACAAA
-			AAQDAACEXAAAAAAAAAgAAAAEAwAAlsYDAAAAAAAIAAAABAMAAFkp
-			JQAAAAAACAAAAAQDAADyXP42AAAAAAgAAAAEAwAA4n5U9QAAAAAU
-			AAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBwnrk
-			bgAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
-			AAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTov
-			Ly8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAI
-			AAAAAAQAAEHGd57agAAAJAAAAAEBAABFRURCQzQ5NS1ERjUyLTQ1
-			NkEtQjQzMS1GQjYwN0JGMDRBRDEYAAAAAQIAAIEAAAABAAAA7xMA
-			AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7/
-			//8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQ
-			EAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAA
-			SAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEA
-			AAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAA
-			AAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ
-			0AAABAAAAAAAAAA=
+			AAAAAQEAAGJvbGQtZGF0YXNldC1jaXRhdGlvbnMAABkAAAABAQAA
+			Y3Jvc3NyZWZfbWF0Y2hfZmFpbGVkLnR4dAAAABQAAAABBgAAEAAA
+			ACAAAAAwAAAARAAAAGQAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQD
+			AACWxgMAAAAAAAgAAAAEAwAAWSklAAAAAAAIAAAABAMAAPJc/jYA
+			AAAACAAAAAQDAADqk1T1AAAAABQAAAABBgAApAAAALQAAADEAAAA
+			1AAAAOQAAAAIAAAAAAQAAEHHpwVGbdzyGAAAAAECAAABAAAAAAAA
+			AA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMD
+			AAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+			IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcZ3ntqAAAAkAAAA
+			AQEAAEVFREJDNDk1LURGNTItNDU2QS1CNDMxLUZCNjA3QkYwNEFE
+			MRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEB
+			AAAvAAAAAAAAAAEFAAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVu
+			dGlmaWVyS2V5AAAEAAAAAwMAABm0NADYAAAA/v///wEAAAAAAAAA
+			EQAAAAQQAACIAAAAAAAAAAUQAAD0AAAAAAAAABAQAAAgAQAAAAAA
+			AEAQAAAQAQAAAAAAAAIgAADsAQAAAAAAAAUgAABcAQAAAAAAABAg
+			AABsAQAAAAAAABEgAACgAQAAAAAAABIgAACAAQAAAAAAABMgAACQ
+			AQAAAAAAACAgAADMAQAAAAAAADAgAAD4AQAAAAAAAAHAAABAAQAA
+			AAAAABHAAAAgAAAAAAAAABLAAABQAQAAAAAAABDQAAAEAAAAAAAA
+			AAACAIAkAgAAAAAAAA==
 			</data>
 			<key>FileURL</key>
-			<string>file:///Users/rpage/Development/bold-dataset-citations/lcs.php</string>
+			<string>file:///Users/rpage/Development/bold-dataset-citations/crossref_match_failed.txt</string>
 			<key>HasSecurityScope</key>
 			<true/>
 			<key>RelativePath</key>
-			<string>./lcs.php</string>
+			<string>./crossref_match_failed.txt</string>
 			<key>TypeID</key>
 			<string>_CFileLocator</string>
 			<key>Version</key>
@@ -64,7 +66,51 @@
 	<array>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
+			<key>Location</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va0ADAAAAAAQQMAAAADcRbRRwRr5Ca873pQ5+hVbS
+				8IQSGM/35t960CiSV7hOMAIAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
+				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
+				YXNldC1jaXRhdGlvbnMAABkAAAABAQAAY3Jvc3NyZWZf
+				bWF0Y2hfZmFpbGVkLnR4dAAAABQAAAABBgAAEAAAACAA
+				AAAwAAAARAAAAGQAAAAIAAAABAMAAIRcAAAAAAAACAAA
+				AAQDAACWxgMAAAAAAAgAAAAEAwAAWSklAAAAAAAIAAAA
+				BAMAAPJc/jYAAAAACAAAAAQDAADqk1T1AAAAABQAAAAB
+				BgAApAAAALQAAADEAAAA1AAAAOQAAAAIAAAAAAQAAEHH
+				pwVGbdzyGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAA
+				AAAAAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAA
+				CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
+				IEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcZ3ntqA
+				AAAkAAAAAQEAAEVFREJDNDk1LURGNTItNDU2QS1CNDMx
+				LUZCNjA3QkYwNEFEMRgAAAABAgAAgQAAAAEAAADvEwAA
+				AQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAAAa
+				AAAAAQEAAE5TVVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5
+				AAAEAAAAAwMAABm0NADYAAAA/v///wEAAAAAAAAAEQAA
+				AAQQAACIAAAAAAAAAAUQAAD0AAAAAAAAABAQAAAgAQAA
+				AAAAAEAQAAAQAQAAAAAAAAIgAADsAQAAAAAAAAUgAABc
+				AQAAAAAAABAgAABsAQAAAAAAABEgAACgAQAAAAAAABIg
+				AACAAQAAAAAAABMgAACQAQAAAAAAACAgAADMAQAAAAAA
+				ADAgAAD4AQAAAAAAAAHAAABAAQAAAAAAABHAAAAgAAAA
+				AAAAABLAAABQAQAAAAAAABDQAAAEAAAAAAAAAAACAIAk
+				AgAAAAAAAA==
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rpage/Development/bold-dataset-citations/crossref_match_failed.txt</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Date</key>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -105,7 +151,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -148,7 +194,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -192,7 +238,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -236,7 +282,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -281,7 +327,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -325,7 +371,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -369,7 +415,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -413,7 +459,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -456,7 +502,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -499,7 +545,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -544,7 +590,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -589,7 +635,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -634,7 +680,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
+			<date>2026-02-25T11:54:45Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -677,50 +723,6 @@
 				<integer>1</integer>
 			</dict>
 		</dict>
-		<dict>
-			<key>Date</key>
-			<date>2026-02-24T21:41:49Z</date>
-			<key>Location</key>
-			<dict>
-				<key>BookmarkData</key>
-				<data>
-				Ym9va0wDAAAAAAQQMAAAACyDOFInl6lL4jDyWHVW4t+p
-				0E0dUCJem5K26byuldrlPAIAAAQAAAADAwAAAAgAKAUA
-				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
-				AAEBAABEZXZlbG9wbWVudAAWAAAAAQEAAGJvbGQtZGF0
-				YXNldC1jaXRhdGlvbnMAAAMAAAABAQAAYmtnAAQAAAAB
-				AQAAMS5udBgAAAABBgAAEAAAACAAAAAwAAAARAAAAGQA
-				AABwAAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAAlsYD
-				AAAAAAAIAAAABAMAAFkpJQAAAAAACAAAAAQDAADyXP42
-				AAAAAAgAAAAEAwAALs/FQQAAAAAIAAAABAMAAKwzxkEA
-				AAAAGAAAAAEGAACcAAAArAAAALwAAADMAAAA3AAAAOwA
-				AAAIAAAAAAQAAEHG6RWJ2GzUGAAAAAECAAABAAAAAAAA
-				AA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAQAAAAAAAAA
-				BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAAB
-				AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-				AAAABAAAQcZ3ntqAAAAkAAAAAQEAAEVFREJDNDk1LURG
-				NTItNDU2QS1CNDMxLUZCNjA3QkYwNEFEMRgAAAABAgAA
-				gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAv
-				AAAAAAAAAAEFAAAaAAAAAQEAAE5TVVJMRG9jdW1lbnRJ
-				ZGVudGlmaWVyS2V5AAAEAAAAAwMAAFhBNADYAAAA/v//
-				/wEAAAAAAAAAEQAAAAQQAAB8AAAAAAAAAAUQAAD8AAAA
-				AAAAABAQAAAsAQAAAAAAAEAQAAAcAQAAAAAAAAIgAAD4
-				AQAAAAAAAAUgAABoAQAAAAAAABAgAAB4AQAAAAAAABEg
-				AACsAQAAAAAAABIgAACMAQAAAAAAABMgAACcAQAAAAAA
-				ACAgAADYAQAAAAAAADAgAAAEAgAAAAAAAAHAAABMAQAA
-				AAAAABHAAAAgAAAAAAAAABLAAABcAQAAAAAAABDQAAAE
-				AAAAAAAAAAwCAIAwAgAAAAAAAA==
-				</data>
-				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/bold-dataset-citations/bkg/1.nt</string>
-				<key>HasSecurityScope</key>
-				<true/>
-				<key>TypeID</key>
-				<string>_CFileLocator</string>
-				<key>Version</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
 	</array>
 	<key>ScratchpadItemsExpanded</key>
 	<true/>
@@ -731,8 +733,8 @@
 	<key>ToolbarVisible:rpage</key>
 	<false/>
 	<key>ViewSplitterPosition:rpage</key>
-	<real>0.23604650795459747</real>
-	<key>WindowFrame:rpage:displays([(0, 0), (1512, 982)])</key>
-	<string>rect(180,743,982,1603)</string>
+	<real>0.19727891683578491</real>
+	<key>WindowFrame:rpage:displays([(0, 0), (1512, 982)]:[(-1600, 0), (1600, 900)])</key>
+	<string>rect(66,0,868,1029)</string>
 </dict>
 </plist>
