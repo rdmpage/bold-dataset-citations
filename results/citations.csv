@@ -1,7 +1,10 @@
 dataset,doi,handle,urn,url
+ DS-SPINIPEU,10.3897/nl.39.8382,,,
 DS-0412,,10214/6657,,https://atrium.lib.uoguelph.ca/server/api/core/bitstreams/cad4fbfe-3512-4186-a8bb-da090930a9c1/content
 DS-070222,,,urn:nbn:hr:217:276721,https://repozitorij.unizg.hr/islandora/object/pmf:11534
 DS-070222,10.3390/d14030182,,,https://www.mdpi.com/1424-2818/14/3/182
+DS-0798,10.1371/journal.pone.0334948,,,
+DS-0798,10.1101/2025.07.21.665927,,,
 DS-10FLR,10.1038/s41598-021-95147-8,,,https://www.nature.com/articles/s41598-021-95147-8
 DS-1495,10.17352/aha.000002,,,
 DS-188PSLQ,10.3389/fevo.2021.775414,,,https://www.frontiersin.org/articles/10.3389/fevo.2021.775414/full
@@ -953,6 +956,7 @@ DS-ICELUS,10.5670/oceanog.2015.64,,,https://www.jstor.org/stable/24861908
 DS-ICHPUE,10.33338/ef.84150,,,https://journal.fi/entomolfennica/article/view/84150
 DS-IDBMTP,10.3897/bdj.6.e29927,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC6306476/
 DS-IEOBG10,10.1111/jai.12480,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/jai.12480
+DS-IEWMG ,10.3390/d14111006,,,
 DS-IFEL,10.1007/s10750-017-3443-5,,,https://link.springer.com/article/10.1007/s10750-017-3443-5
 DS-IFEL,10.1007/s10750-017-3443-5,,,https://www.academia.edu/download/105130106/s10750-017-3443-520230819-1-vgbqu1.pdf
 DS-IFLFORM,10.1016/j.jembe.2022.151763,,,https://www.sciencedirect.com/science/article/pii/S0022098122000715
@@ -1049,6 +1053,7 @@ DS-LEALSATT,10.11646/zootaxa.5128.3.8,,,
 DS-LEALSATT,10.11646/zootaxa.5128.3.8,,,
 DS-LEATGEOM,10.1371/journal.pone.0298025,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298025
 DS-LEATNOCT,10.3897/bdj.7.e37734,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC6694074/
+DS-LEAVBG,,,,https://www.inatura.at/forschung-online/ForschOn_2015_015_0001-0036.pdf
 DS-LEBBEUS,10.1007/s10750-015-2403-1,,,https://link.springer.com/article/10.1007/s10750-015-2403-1
 DS-LECARY,10.3897/zookeys.404.7234,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC4023261/
 DS-LECITH,10.3897/nl.46.101457,,,https://nl.pensoft.net/article/101457/download/pdf/
@@ -1215,6 +1220,7 @@ DS-MELECT,10.3897/jhr.97.129470,,,
 DS-MELECT,10.3897/jhr.97.129470,,,
 DS-MELITAEA,10.3390/genes12122009,,,https://www.mdpi.com/2073-4425/12/12/2009
 DS-MERGALBE,,,,http://www.nw-ornithologen.de/images/textfiles/charadrius/charadrius51_57_62_Klein_etal_ErstbrutnachweisZwergsaegerDeutschland.pdf
+DS-MESOCH,,,,https://nrm.diva-portal.org/smash/get/diva2:1133785/FULLTEXT01.pdf
 DS-METZDAVI,10.57065/shilap.141,,,
 DS-METZDAVI,10.57065/shilap.141,,,
 DS-METZDAVI,10.57065/shilap.141,,,
@@ -1279,6 +1285,7 @@ DS-MQTBC,10.2987/21-6967,,,
 DS-MQTBC,10.2987/21-6967,,,
 DS-MQTBC,10.2987/21-6967,,,
 DS-MQTBC,10.2987/21-6967,,,
+DS-MRCDBREF,10.2982/0012-8317-97.2.135,,,
 DS-MRHMC,10.1002/ece3.5073,,,
 DS-MRHMC,10.1002/ece3.5073,,,
 DS-MRHMC,10.1002/ece3.5073,,,
@@ -1336,6 +1343,7 @@ DS-NAMNOC8,10.1371/journal.pone.0178548,,,https://journals.plos.org/plosone/arti
 DS-NATHBREV,10.1649/0010-065x-77.1.127,,,https://bioone.org/journals/the-coleopterists-bulletin/volume-77/issue-1/0010-065X-77.1.127/First-Report-of-Nathrius-brevipennis-Mulsant-Coleoptera--Cerambycidae/10.1649/0010-065X-77.1.127.short
 DS-NBCOL,10.1002/ece3.5103,,,https://onlinelibrary.wiley.com/doi/abs/10.1002/ece3.5103
 DS-NCGRAC1,10.1515/bot-2017-0120,,,https://www.degruyter.com/document/doi/10.1515/bot-2017-0120/html
+DS-NCLADO1,10.1111/jpy.12510,,,
 DS-NEAMICRO,10.3897/bdj.2.e4153,,,
 DS-NEAMICRO,10.3897/bdj.2.e4153,,,
 DS-NEAMICRO,10.3897/bdj.2.e4153,,,
@@ -1364,6 +1372,7 @@ DS-NEONZ,10.1371/journal.pone.0037528,,,
 DS-NEOPALPA,10.3897/zookeys.646.11411,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC5299441/
 DS-NEOPHY,10.11646/zootaxa.4341.3.1,,,https://www.researchgate.net/profile/Carlos-Lopez-Vaamonde/publication/320756842_Taxonomic_revision_of_Neotropical_Phyllocnistis_Zeller_1848_Lepidoptera_Gracillariidae_with_descriptions_of_seven_new_species_and_host_plant_associations/links/59f99724aca272607e2f84e9/Taxonomic-revision-of-Neotropical-Phyllocnistis-Zeller-1848-Lepidoptera-Gracillariidae-with-descriptions-of-seven-new-species-and-host-plant-associations.pdf
 DS-NEOSESII,10.3897/zookeys.866.34202,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC6669215/
+DS-NEPCAT,10.3897/zookeys.628.9799,,,
 DS-NEPHIUS1,10.11646/zootaxa.4500.3.5,,,https://europepmc.org/article/med/30486069
 DS-NEPHIUS2,10.11646/zootaxa.4500.3.5,,,https://europepmc.org/article/med/30486069
 DS-NEPPHYLO,10.1111/syen.12212,,,https://resjournals.onlinelibrary.wiley.com/doi/abs/10.1111/syen.12212
@@ -1482,6 +1491,7 @@ DS-ORTNEV,10.37520/aemnp.2024.015,,,https://www.biotaxa.org/AEMNP/article/view/8
 DS-OTIBAZO,10.11646/zootaxa.3869.5.11,,,https://www.mapress.com/zootaxa/2014/f/zt03869p600.pdf
 DS-OTUFBC,10.1111/1755-0998.12557,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.12557
 DS-OWENIIDA,10.1111/ivb.12311,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/ivb.12311
+DS-OWLNS,10.4039/tce.2020.26,,,
 DS-PACIF,10.18061/bssb.v2i2.8873,,,
 DS-PACIF,10.18061/bssb.v2i2.8873,,,
 DS-PACIF,10.18061/bssb.v2i2.8873,,,
@@ -1504,6 +1514,7 @@ DS-PAOCRYPT,10.3897/asp.72.e31897,,,
 DS-PAOCRYPT,10.3897/asp.72.e31897,,,
 DS-PAPA,10.1111/1755-0998.13402,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.13402
 DS-PAQ2023,10.3897/bdj.12.e120340,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC11249851/
+DS-PARAMYIA,10.11646/zootaxa.4732.1.1,,,
 DS-PARANA,10.1111/mec.15384,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15384
 DS-PARARGE,10.1111/jbi.13354,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13354
 DS-PARASI,10.1016/j.pedobi.2025.151038,,,
@@ -1546,9 +1557,11 @@ DS-PELECO,10.21248/contrib.entomol.71.2.321-343,,,
 DS-PELECO,10.21248/contrib.entomol.71.2.321-343,,,
 DS-PELECOC,10.11646/zootaxa.5141.1.1,,,https://hal.science/hal-03680315/
 DS-PEPM,10.1515/mammalia-2013-0128,,,https://www.degruyter.com/document/doi/10.1515/mammalia-2013-0128/html
+DS-PEPSYPUB,10.1093/isd/ixaf033,,,
 DS-PERCCOTT,10.3897/neobiota.57.48958,,,https://vb.gamtc.lt/object/elaba:66716250/
 DS-PERIGUNE,10.1080/09397140.2021.1883657,,,https://www.tandfonline.com/doi/abs/10.1080/09397140.2021.1883657
 DS-PETAL,10.5281/zenodo.4746256,,,https://bioone.org/journals/odonatologica/volume-50/issue-1-2/zenodo.4746256/Molecular-phylogenetics-of-Petalura-Leach-1815-Odonata-Petaluridae/10.5281/zenodo.4746256.short
+DS-PETER1,10.5281/zenodo.322675,,,
 DS-PGCNA,10.3389/fmars.2022.838201,,,https://www.frontiersin.org/articles/10.3389/fmars.2022.838201/full
 DS-PGCSW,10.3354/meps12496,,,
 DS-PGCSW,10.3354/meps12496,,,
@@ -1558,6 +1571,7 @@ DS-PHAEDUSA,10.1016/j.ympev.2020.107060,,,https://www.academia.edu/download/1094
 DS-PHAEDUSA,10.1038/s41598-022-22651-w,,,https://www.nature.com/articles/s41598-022-22651-w
 DS-PHAEDUSA,10.21203/rs.3.rs-1707751/v1,,,https://www.researchsquare.com/article/rs-1707751/latest
 DS-PHAEDUSA,10.1016/j.ympev.2020.107060,,,https://www.sciencedirect.com/science/article/pii/S1055790320303328
+DS-PHASELIA,10.11646/zootaxa.5326.1.1,,,
 DS-PHCEN,10.4081/tz.2017.55,,,
 DS-PHCEN,10.4081/tz.2017.55,,,
 DS-PHCEN,10.4081/tz.2017.55,,,
@@ -1577,6 +1591,7 @@ DS-PHILGYM,10.26757/pjsb2021a15007,,,
 DS-PHILONO,10.3897/zookeys.494.8748,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC4400378/
 DS-PHORONID,10.1111/ivb.12242,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/ivb.12242
 DS-PHPCON,10.3391/bir.2023.12.4.08,,,https://www.researchgate.net/profile/Valentin-Queloz/publication/375917288_First_detection_of_invasive_Douglas_fir_needle_midges_from_the_genus_Contarinia_Rondani_Diptera_Cecidomyiidae_in_Switzerland/links/65b811601bed776ae3158ce2/First-detection-of-invasive-Douglas-fir-needle-midges-from-the-genus-Contarinia-Rondani-Diptera-Cecidomyiidae-in-Switzerland.pdf
+DS-PHPXYL,10.3391/bir.2024.13.3.05,,,
 DS-PHRAGMAT,10.11646/zootaxa.5128.3.3,,,
 DS-PHRAGMAT,10.11646/zootaxa.5128.3.3,,,
 DS-PHRAGMAT,10.11646/zootaxa.5128.3.3,,,
@@ -1614,7 +1629,9 @@ DS-PIN2,10.1080/0269249x.2018.1513869,,,https://www.tandfonline.com/doi/abs/10.1
 DS-PIN3,10.5507/fot.2020.017,,,
 DS-PINMX1HT,10.7717/peerj.12774,,,https://peerj.com/articles/12774/
 DS-PIRCX,10.1371/journal.pone.0134453,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134453
+DS-PITCHCHL,10.7717/peerj.4491,,,
 DS-PKATTER,10.3897/zookeys.833.30936,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC6477873/
+DS-PKPB01,10.1111/aen.12095,,,
 DS-PLATYBOL,10.1007/s13592-018-0622-y,,,https://link.springer.com/article/10.1007/s13592-018-0622-y
 DS-PLATYPEU,10.3897/nl.40.12127,,,https://www.academia.edu/download/69298545/4851c02ae8182cca3c72d9ebd96b2aad46b4.pdf
 DS-PLEBIC,10.11646/zootaxa.4941.4.1,,,https://researchportal.helsinki.fi/en/publications/subspecies-of-ipleurota-bicostellai-clerck-1759-revisited-and-des
@@ -1669,6 +1686,7 @@ DS-PPSN,10.3897/nl.41.22423,,,
 DS-PPSN,10.3897/nl.41.22423,,,
 DS-PPSN,10.3897/nl.41.22423,,,
 DS-PPSN,10.3897/nl.41.22423,,,
+DS-PPUNCTI,10.22201/ib.20078706e.2021.92.3752,,,
 DS-PRASIYE,,,,http://www.pfeil-verlag.de/wp-content/uploads/2017/11/SPIX_40_2_02_HA.pdf
 DS-PREYARMY,10.1002/ecs2.4812,,,https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecs2.4812
 DS-PROBHUN,10.1051/kmae/2020003,,,https://www.kmae-journal.org/articles/kmae/abs/2020/01/kmae190149/kmae190149.html
@@ -1687,6 +1705,7 @@ DS-PSARUS,10.1080/00379271.2015.1059735,,,
 DS-PSARUS,10.1080/00379271.2015.1059735,,,
 DS-PSARUS,10.1080/00379271.2015.1059735,,,
 DS-PSCOETYE,10.11646/zootaxa.3768.4.4,,,https://www.biotaxa.org/Zootaxa/article/view/zootaxa.3768.4.4
+DS-PSDACTIS,10.57065/shilap.1111,,,
 DS-PSEHAH,10.33338/ef.71220,,,https://journal.fi/entomolfennica/article/view/71220
 DS-PSEUDOPH,10.1186/s40850-018-0032-7,,,https://link.springer.com/article/10.1186/s40850-018-0032-7
 DS-PSFOR01,10.3897/bdj.3.e4078,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC4355675/
@@ -1700,6 +1719,7 @@ DS-PSYFOR,10.14411/eje.2016.014,,,
 DS-PSYFOR,10.14411/eje.2016.014,,,
 DS-PSYFOR,10.14411/eje.2016.014,,,
 DS-PSYLL,10.1093/evolut/qpad197,,,https://academic.oup.com/evolut/article-abstract/78/1/127/7334266
+DS-PT401,10.13140/rg.2.2.18827.72489,,,
 DS-PTEGBOLR,10.3897/bdj.9.e77092,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC8671368/
 DS-PTERODS,,,,https://philjournalsci.dost.gov.ph/images/pdf/special_issue/148_S1/DNA_barcodes_reveal_high_genetic_diversity_.pdf
 DS-PTERYGNO,10.11646/zootaxa.4341.3.4,,,https://www.academia.edu/download/112034937/2017_Pterygnophos_Zootaxa.pdf
@@ -1725,9 +1745,17 @@ DS-RADTRIC,10.1093/isd/ixab013,,,https://academic.oup.com/isd/article-abstract/5
 DS-RAPBPAN,10.3390/d9020019,,,https://www.mdpi.com/1424-2818/9/2/19
 DS-RAPBPAN,10.3390/taxonomy2010004,,,https://www.mdpi.com/2673-6500/2/1/4
 DS-RAWKA,10.5281/zenodo.14027156,,,https://sparrow.up.poznan.pl/pte/dipteron/biuletyn/vol40/Slomczynski_K_et_al_Dipteron_40_04.pdf
-DS-RBB15,,,,https://mnhn.hal.science/mnhn-04271668/
+DS-RBB15,10.3897/bdj.3.e6313,,,
+DS-RBBCOL,10.3897/bdj.3.e6313,,,
+DS-RBBDIP,10.3897/bdj.3.e6313,,,
+DS-RBBHYM,10.3897/bdj.3.e6313,,,
+DS-RBBLEP,10.3897/bdj.3.e6313,,,
+DS-RBBMISC,10.3897/bdj.3.e6313,,,
+DS-RBBSPI,10.3897/bdj.3.e6313,,,
 DS-REDMTAN,10.1111/syen.12292,,,https://resjournals.onlinelibrary.wiley.com/doi/abs/10.1111/syen.12292
+DS-REPGR,10.3897/bdj.9.e67134,,,
 DS-RERM,10.1098/rspb.2016.0553,,,https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2016.0553
+DS-REVAYA,10.11646/zootaxa.5369.2.2,,,
 DS-RGCAL,10.1038/s41598-022-18234-4,,,https://www.nature.com/articles/s41598-022-18234-4
 DS-RGCAL,10.21203/rs.3.rs-1494665/v1,,,https://www.researchsquare.com/article/rs-1494665/latest
 DS-RGWS2EUR,10.1080/09670262.2020.1753245,,,
@@ -1748,6 +1776,7 @@ DS-RIBESI,10.11646/zootaxa.4034.1.5,,,
 DS-RIBESI,10.11646/zootaxa.4034.1.5,,,
 DS-RIBESI,10.11646/zootaxa.4034.1.5,,,
 DS-RICKET,10.1093/gigascience/giab021,,,https://academic.oup.com/gigascience/article-abstract/10/3/giab021/6187866
+DS-RIGOUT,10.11646/zootaxa.5150.2.4,,,
 DS-RLMPCCDB,10.1371/journal.pone.0156426,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156426
 DS-ROCET,,,,http://www.entomologi.no/journals/nje/2022-2/pdf/nje-vol69-no2-2022-269-283-kjaerandsen.pdf
 DS-ROCET,,10037/28098,,https://munin.uit.no/bitstream/handle/10037/28098/article.pdf?sequence=4
@@ -1854,6 +1883,7 @@ DS-SPH02AUS,10.1371/journal.pone.0101108,,,https://www.researchgate.net/profile/
 DS-SPHD2401,10.1111/icad.12762,,,https://resjournals.onlinelibrary.wiley.com/doi/abs/10.1111/icad.12762
 DS-SPHEC18,10.3897/zookeys.836.30326,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC6477872/
 DS-SPHECEU,10.1111/1755-0998.12963,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.12963
+DS-SPHSMP,,10214/12163,,
 DS-SPIALIA,10.1111/mec.13756,,,http://www.entomologiitaliani.net/public/clido/2016_Hernandez-Roldan_et_al_Spialia%20rosae.pdf
 DS-SPIALIA,10.1111/mec.13756,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.13756
 DS-SPILO,10.3897/bdj.12.e114515,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC10790369/
@@ -1966,7 +1996,7 @@ DS-TGBGHM,10.1038/s41597-025-05833-9,,,
 DS-TGBGHM,10.1038/s41597-025-05833-9,,,
 DS-TGBGHM,10.1038/s41597-025-05833-9,,,
 DS-TGBGHM,10.1038/s41597-025-05833-9,,,
-DS-TGP2,,,,https://journal.lib.uoguelph.ca/index.php/eso/article/view/7841
+DS-TGP2,10.21083/jeso.v155i.7841,,,https://journal.lib.uoguelph.ca/index.php/eso/article/view/7841
 DS-THAIPAR,10.3390/f14101991,,,
 DS-THAIPAR,10.3390/f14101991,,,
 DS-THAIPAR,10.3390/f14101991,,,
@@ -2043,6 +2073,7 @@ DS-TTSEUR,10.3897/bdj.8.e59177,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC775833
 DS-TUNAMP,10.1007/s10531-023-02617-8,,,https://link.springer.com/article/10.1007/s10531-023-02617-8
 DS-TYPODUL1,10.26049/asp77-2-2019-04,,,https://arthropod-systematics.arphahub.com/article/31985/download/pdf/
 DS-TYPODUL2,10.26049/asp77-2-2019-04,,,https://arthropod-systematics.arphahub.com/article/31985/download/pdf/
+DS-UBPMF,10.14430/arctic4679,,,
 DS-UHURUR1,10.7275/55343,20.500.14394/55343,,https://scholarworks.umass.edu/entities/publication/1e05cb36-2fde-450d-9f40-2d92300d704c
 DS-UHURUR2,10.1111/1755-0998.13001,,,https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.13001
 DS-UHURUR2,10.7275/55343,20.500.14394/55343,,https://scholarworks.umass.edu/entities/publication/1e05cb36-2fde-450d-9f40-2d92300d704c
@@ -2122,10 +2153,12 @@ DS-WILLSZN,10.1007/s00442-025-05672-w,,,https://link.springer.com/article/10.100
 DS-WOLSC,10.1093/molbev/msx073,,,https://academic.oup.com/mbe/article-abstract/34/5/1183/2992913
 DS-WPPOLIST,10.3897/zookeys.713.11335,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC5674218/
 DS-XEMAC,10.3897/asp.76.e31935,,,https://arthropod-systematics.arphahub.com/article/31935/download/pdf/
+DS-XENIMPIA,10.11646/zootaxa.5677.1.1,,,
 DS-XENOLEP,10.1016/j.japb.2023.07.001,,,https://www.sciencedirect.com/science/article/pii/S2287884X23000730
 DS-XORIDES,,,,https://et-online.nu/index.php/contents/article/view/120
 DS-XYLOCOL1,10.14411/eje.2021.009,,,https://hal.sorbonne-universite.fr/hal-03195854/
 DS-XYLOPHY1,10.1098/rspb.2021.2435,,,https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2021.2435
+DS-YATORTH,10.3897/jor.33.116137,,,
 DS-YAWAN,10.4289/0013-8797.117.2.247,,,https://bioone.org/journals/proceedings-of-the-entomological-society-of-washington/volume-117/issue-2/0013-8797.117.2.247/DNA-Barcodes-of-Lepidoptera-Reared-from-Yawan-Papua-New-Guinea/10.4289/0013-8797.117.2.247.full
 DS-YAWAN2,10.1371/journal.pone.0222119,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222119
 DS-YAWAN2,10.1111/ecog.03849,,,https://nsojournals.onlinelibrary.wiley.com/doi/abs/10.1111/ecog.03849

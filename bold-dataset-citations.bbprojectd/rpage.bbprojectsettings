@@ -4,7 +4,7 @@
 <dict>
 	<key>EmbeddedEditorHidden:rpage</key>
 	<false/>
-	<key>ExpandedEditorWidth:rpage:displays([(0, 0), (1512, 982)]:[(-1600, 0), (1600, 900)])</key>
+	<key>ExpandedEditorWidth:rpage:displays([(0, 0), (1512, 982)])</key>
 	<integer>826</integer>
 	<key>ExpandedItems:rpage</key>
 	<array>
@@ -66,7 +66,7 @@
 	<array>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -110,7 +110,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -151,7 +151,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -194,7 +194,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -238,7 +238,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -282,7 +282,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -327,7 +327,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -371,7 +371,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -415,7 +415,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -459,7 +459,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -502,7 +502,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -545,7 +545,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -590,7 +590,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -635,7 +635,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -680,7 +680,7 @@
 		</dict>
 		<dict>
 			<key>Date</key>
-			<date>2026-02-25T11:54:45Z</date>
+			<date>2026-02-26T09:30:23Z</date>
 			<key>Location</key>
 			<dict>
 				<key>BookmarkData</key>
@@ -734,7 +734,7 @@
 	<false/>
 	<key>ViewSplitterPosition:rpage</key>
 	<real>0.19727891683578491</real>
-	<key>WindowFrame:rpage:displays([(0, 0), (1512, 982)]:[(-1600, 0), (1600, 900)])</key>
-	<string>rect(66,0,868,1029)</string>
+	<key>WindowFrame:rpage:displays([(0, 0), (1512, 982)])</key>
+	<string>rect(69,1,871,1030)</string>
 </dict>
 </plist>
