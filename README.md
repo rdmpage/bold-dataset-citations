@@ -17,7 +17,7 @@ Zeng, Tong, Longfeng Wu, Sarah Bratt, and Daniel E. Acuna. ‘Assigning Credit t
 
 BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of these, I retrieved metadata from DataCite using their API (`harvest-dois.php`), parsed the resulting JSON (`parse-dois.php`) and stored the results in the `dataset` table.
 
-The list of DOIs was retreived from a dump from DataCite which may be out of date. For example, https://bdj.pensoft.net/article/149486/ has a DOI https://doi.org/10.5883/DS-MANGF that is not in my dataset.
+The list of DOIs was retrieved from the [DataCite Public Data File 2024](https://doi.org/10.14454/tjpc-9m93) from DataCite. More recent DOIs will have been missed, for example, https://bdj.pensoft.net/article/149486/ has a DOI https://doi.org/10.5883/DS-MANGF that is not in this dataset.
 
 I used Google Scholar to attempt to link these datasets to relevant publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches on the dataset title (which was retrieved from DataCite) (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`.
 
@@ -47,7 +47,7 @@ From a comment on the blog post, this paper (https://doi.org/10.1163/15685381-bj
 Sometimes papers include links to other, related versions of the data.
 
 | BOLD dataset | Other database | Notes |
-|-- | -- |
+|--|--|--|
 | 10.5883/DS-CHIRI | https://doi.org/10.5061/dryad.rjdfn2z9b | Dryad, which has JSON-LD, link to DS-CHIRI is in the HTML but not the RDF embedded in the site. However it is in the JSON metadata from Datacite https://api.datacite.org/dois/10.5061/dryad.rjdfn2z9b |
 | DS-BIBART | https://doi.org/10.5063/F11J9874 | KNB, the KNB link is mentioned in the paper, KNB web page has embedded JSON-LD in `<HEAD>`, quite sophisticated. The dataset itself has lots of images, etc. (my copy of BOLD is missing these!). No link to paper or BOLD. | 
 
@@ -92,11 +92,15 @@ php citations-to-csv.php > results/citations.csv
 
 ### Data Citation Corpus format
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15824274.svg)](https://doi.org/10.5281/zenodo.15824274)
+
 The file `data-citation-corpus.csv` contains the citations in the format required by the Data Citation Corpus, see https://docs.google.com/spreadsheets/d/18WyqWtOrM7L5K0ezImoiTR1U9edHJTFtQoFsE5b6BW4/edit?usp=sharing. This data is assembled in the table `data-citation-corpus` by a series of scripts:
 
 - `citations-to-data-citation-corpus.php` inserts the (dataset DOI, publication DOI) citation pairs, which are also the primary keys. This data comes from the `cleaned` table.
 - `csl-to-data-citation-corpus.php` adds data on the publications sourced by resolving the publication DOIs and retrieving CSL-JSON. For preprints I use the `institution` field rather than the publisher field. Most publication DOIs are from CrossRef and so have detailed information, but some come from other providers. One DOI does not resolve (Zenodo DOI used by BioOne).
 - `data-to-data-citation-corpus.php` adds information on the dataset sources from DataCite, such as title and subjects. BOLD datasets have no information on creator affiliations or funders.
+
+The dataset has been uploaded to Zenodo https://doi.org/10.5281/zenodo.15824274.
 
 
 ### Triples (see below on knowledge graph)
