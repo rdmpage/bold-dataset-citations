@@ -4,6 +4,10 @@ Gathering links between DNA barcode datasets in BOLD and publications citing tho
 
 Note that in an ideal world we could use MakeDataCount’s [Data Citation Corpus](https://doi.org/10.5281/zenodo.11196858), but in my experience this corpus is something of a mess. For example in version 2 of that corpus the BOLD datasets are recorded as citing themselves(!).
 
+Latest version of the data is in Zenodo: 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21240015.svg)](https://doi.org/10.5281/zenodo.21240015)
+
+
 ## Methods
 
 ### Database
@@ -57,13 +61,16 @@ The table `dataset` represents the data for the BOLD datasets. The table `cleane
 
 ### Output
 
-#### CSV files
+#### CSV file
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21240015.svg)](https://doi.org/10.5281/zenodo.21240015)
 
 The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting publication DOIs, Handles, URNs, and URLs where they are available. To generate an updated file of citations:
 
 ```
 php citations-to-csv.php > results/citations.csv
 ```
+
 
 #### Data Citation Corpus format
 
