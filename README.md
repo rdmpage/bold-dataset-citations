@@ -2,54 +2,137 @@
 
 Gathering links between DNA barcode datasets in BOLD and publications citing those datasets.
 
-Note that in an ideal world we could use MakeDataCount’s Data Citation Corpus, but it’s a mess. In version 2 of that corpus BOLD datasets are recorded as citing themselves(!).
+Note that in an ideal world we could use MakeDataCount’s [Data Citation Corpus](https://doi.org/10.5281/zenodo.11196858), but in my experience this corpus is something of a mess. For example in version 2 of that corpus the BOLD datasets are recorded as citing themselves(!).
 
-## Infographic?
+## Methods
 
-Perhaps create an infographic of the process of assembling this dataset?
+### Database
 
+A SQLite database was created to manage the data.
 
-## Reading
+### Dataset DOIs
 
-Zeng, Tong, Longfeng Wu, Sarah Bratt, and Daniel E. Acuna. ‘Assigning Credit to Scientific Datasets Using Article Citation Networks’. Journal of Informetrics 14, no. 2 (1 May 2020): 101013. https://doi.org/10.1016/j.joi.2020.101013.
+BOLD datasets with DataCite DOIs match the pattern `10.5883/DS-*`. The list of all DataCite DOIs was retrieved from the [DataCite Public Data File 2024](https://doi.org/10.14454/tjpc-9m93) from DataCite. Given a list of these, I retrieved metadata from DataCite using their API (`harvest-dois.php`), parsed the resulting JSON (`parse-dois.php`) and stored the results in the `dataset` table.
 
-## BOLD datasets
+### Linking datasets to publications
 
-BOLD datasets have DataCite DOIs of the form `10.5883/DS-*`. Given a list of these, I retrieved metadata from DataCite using their API (`harvest-dois.php`), parsed the resulting JSON (`parse-dois.php`) and stored the results in the `dataset` table.
+#### Matching using Google Scholar
 
-The list of DOIs was retrieved from the [DataCite Public Data File 2024](https://doi.org/10.14454/tjpc-9m93) from DataCite. More recent DOIs will have been missed, for example, https://bdj.pensoft.net/article/149486/ has a DOI https://doi.org/10.5883/DS-MANGF that is not in this dataset.
-
-I used Google Scholar to attempt to link these datasets to relevant publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches on the dataset title (which was retrieved from DataCite) (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`.
+I used Google Scholar to attempt to link these datasets to relevant publications. Two searches were performed, one for articles mentioning the `DS-xxxx` identifier (`harvest-gs.php`), the other for matches between the dataset title (which was retrieved from DataCite) and article title (`harvest-gs-title.php`). The results of these two searches were parsed using `parse-gs.php` and `parse-gs-title.php` and stored in a SQL database in the table `citation`. For each article the DOI (if known) was extracted from the search results, as were any other ppotential identifiers such as link to the article online.
 
 In the `citation` table the column `match` is “1” if the identifier string is found in the Google Scholar results, otherwise it is NULL. This is useful for filtering out potentially spurious results, but it is also vulnerable to false positives if, for example, the dataset identifier resembles another term in the text or an author’s name.
 
-To help filter matches based on dataset name I computed the Levenshtein distance between the dataset title and the article title(s) returned by Google Scholar using `match.php` and stored this in the `score` field in the `citation` table. This test is also error-prone. It can miss titles that are clearly related but differ in word order, and it will fail if the language of the article is different from that of the dataset. Because the datasets themselves have been indexed by some of Google Scholar’s sources, it is also possible that the Google Scholar search result is the dataset itself.
+To help filter matches based on dataset name I computed the Levenshtein distance between the dataset title and the article title(s) returned by Google Scholar using `match.php` and stored this value in the `score` field in the `citation` table. This test is error-prone, for example it can miss titles that are clearly related but differ in word order, and it will fail if the language of the article is different from that of the dataset. Because the datasets themselves have been indexed by some of Google Scholar’s sources, it is also possible that the Google Scholar search result is the dataset itself.
 
-Once the two searches were complete, the results were examined using the two criteria above (presence of dataset identifier, match to dataset title). Once clear examples of matches were identified using these methods, the remaining results were manually inspected. The column `accepted` records a match that is deemed to be correct. The data to be manually checked was exported using `export.php` and loaded into a Google Sheet.
+#### Manual editing
 
-After the Google sheet was edited, it was added to the SQL dataset as the table `cleaned`. This table was subject to further automated checking using `check.php`. URLs that hadn’t been accepted or rejected were resolved, and the “DS-*” identifier for the dataset was looked for in either the HTML or PDF for the article.
+Once the two searches were complete, the results were examined using the two criteria above (presence of dataset identifier, match to dataset title). Once clear examples of matches were identified using these methods, the remaining results were manually inspected. The column `accepted` records a match that is deemed to be correct. The data to be manually checked was exported using `export.php` and loaded into a spreadsheet (Google Sheet).
 
-The table `cleaned` was then manually checked again, and declared to be “complete”, knowing that there are obviously still gaps. The script `summary.php` is used to summarise and explore the results.
+After the Google sheet was edited, it was added to the SQL dataset as the table `cleaned`. This table was subject to further automated checking using `check.php`. URLs that hadn’t been either accepted or rejected were resolved, and the “DS-*” identifier for the dataset was looked for in either the HTML or PDF for the article.
 
-Note that `cleaned` is a subset of `dataset` as many datasets returned no result when searched for on Google Scholar.
+The table `cleaned` was then manually checked again, and declared to be “complete”, knowing that there were obviously still gaps. The script `summary.php` is used to summarise and explore the results. Note that `cleaned` is a subset of `dataset` as many datasets returned no result when searched for on Google Scholar.
 
-The table `publications` contains URLs from the Google Scholar results, and metadata extracted by resolving the URL using `url2doi.php` and looking at `<meta>` tags. An attempt was also made to extract DOIs from URLs using regular expressions in `url2extract.php`.
+#### Publication identifiers
+
+In many cases Google Scholar returns links to websites rather than DOIs for the articles, so I attempted to find the corresponding DOi for each URL. Each URL was resolved and article metadata extracted from the HTML (`url2doi.php`), typically the DOI was stored in a <meta> tag in the header of the page. In some cases DOIs were extracted from the article URL itself. If the article web page couldn’t be retrieved (for exmaople, if access by a script was blocked) then the page was loaded manually in a browser and inspected for a DOI. The results of this exercise were stored in the table `publications`.
+
+## Results
+
+### Database
+
+The SQLite database has several tables and views to help manage the data.
+
+### Tables
+
+The table `dataset` represents the data for the BOLD datasets. The table `cleaned` represents a mapping between those datasets and papers that publish and/or cite those datasets. If the value of `cleaned.accepted` is `Y` or starts with `Y` (e.g., `Y thesis`), then the match between dataset DOI and publication identifier is regarded as correct.
+
+#### Views
+
+| View | Purpose |
+|--|--|
+| cited_work_doi | List of unique DOIs of works that cite | 
+| matches_no_doi | List of URLs for publications for which DOIs have bnot been found |
+| matches_not_in_cleaned | Matches between dataset names and publications that are not in the `cleaned` table. This should be empty, so anything in this view can be checked and potentially added to `cleaned`.
+| not_matched | Datasets that have not been added to the `cleaned` table as they have no matches. |
+
+### Output
+
+#### CSV files
+
+The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting publication DOIs, Handles, URNs, and URLs where they are available. To generate an updated file of citations:
+
+```
+php citations-to-csv.php > results/citations.csv
+```
+
+#### Data Citation Corpus format
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15824274.svg)](https://doi.org/10.5281/zenodo.15824274)
+
+The file `data-citation-corpus.csv` contains the citations in the format required by the Data Citation Corpus, see https://docs.google.com/spreadsheets/d/18WyqWtOrM7L5K0ezImoiTR1U9edHJTFtQoFsE5b6BW4/edit?usp=sharing. This data is assembled in the table `data-citation-corpus` by a series of scripts:
+
+- `citations-to-data-citation-corpus.php` inserts the (dataset DOI, publication DOI) citation pairs, which are also the primary keys. This data comes from the `cleaned` table.
+- `csl-to-data-citation-corpus.php` adds data on the publications sourced by resolving the publication DOIs and retrieving CSL-JSON. For preprints I use the `institution` field rather than the publisher field. Most publication DOIs are from CrossRef and so have detailed information, but some come from other providers. One DOI does not resolve (Zenodo DOI used by BioOne).
+- `data-to-data-citation-corpus.php` adds information on the dataset sources from DataCite, such as title and subjects. BOLD datasets have no information on creator affiliations or funders.
+
+The dataset has been uploaded to Zenodo [doi:10.5281/zenodo.15824274](https://doi.org/10.5281/zenodo.15824274).
 
 
-### Missed datasets with no DOIs
 
-From a comment on the blog post, this paper (https://doi.org/10.1163/15685381-bja10148) cites data that is not in my database. The datasets don’t have DOIs and hence weren’t included.
+### Interesting cases
 
-> For the purposes of this study, we defined the Western Palearctic region as depicted in fig. 1, based on previous studies (Duellman and Trueb, 1986; Borkin, 1999; Borkin and Litvinchuk, 2013, 2014). We compiled a total of 1251 sequences, which are organised in BOLD projects DS-AMWPA and DS-AMWPC at www.boldsystems.org for Anura and Caudata, respectively, and includes 60 urodele species and 73 anuran species (belonging to 18 and 16 genera, respectively; supplementary table S1). DS-AMWPA includes 691 sequences, of which 525 (76%) were generated for this study and previously organised in separate BOLD subprojects managed by coauthors on this manuscript (ABAAP, ABCAP, AMWP, IMSAM, ZHABI), as well as 166 sequences (24%) mined from GenBank and other BOLD projects (GBAP, FBHER; supplementary table S2). DS-AMWPC includes 560 sequences, of which 452 (81%) were generated by our team and previously organised in separate BOLD subprojects (ABCAP, AMWP, IMSAM, ZHABI, CABM), as well as 108 sequences (19%) mined from GenBank and other BOLD projects (GBAP, FBHER; supplementary table S3). New sequences were obtained through sequenced DNA barcodes from the collection of tissue samples from different field projects and scientific collections. From the sequences mined from GenBank, we removed those sequences that clearly represent taxonomic misidentifications. Our sampling paid particular focus to the southern climatic refugia in the Western Palearctic (southern European peninsulas and Mediterranean ecosystems in North Africa and the Near East; fig. 1), which constitute biodiversity hotspots for this taxonomic group and in which most of the intraspecific diversity occurs. The taxonomic framework used followed Speybroeck et al. (2020) as a reference. For further details on species ranges and samples used in this reference library, see supplemental material.
+#### Related datasets
 
-### Related datasets
-
-Sometimes papers include links to other, related versions of the data.
+Sometimes papers include links to other, related versions of the data (e.g., data that is also in Dryad).
 
 | BOLD dataset | Other database | Notes |
 |--|--|--|
 | 10.5883/DS-CHIRI | https://doi.org/10.5061/dryad.rjdfn2z9b | Dryad, which has JSON-LD, link to DS-CHIRI is in the HTML but not the RDF embedded in the site. However it is in the JSON metadata from Datacite https://api.datacite.org/dois/10.5061/dryad.rjdfn2z9b |
 | DS-BIBART | https://doi.org/10.5063/F11J9874 | KNB, the KNB link is mentioned in the paper, KNB web page has embedded JSON-LD in `<HEAD>`, quite sophisticated. The dataset itself has lots of images, etc. (my copy of BOLD is missing these!). No link to paper or BOLD. | 
+
+
+#### Searches that return the dataset instead of the citing work
+
+DS-KINA https://cir.nii.ac.jp/crid/1880865118193612416
+
+#### Searches returning theses and preprints
+
+Some searches return thesis or preprints, some of which had persistent identifiers such as DOIs.
+
+https://edoc.ub.uni-muenchen.de/27000/ has a DOI for thesis in the body but not header.
+
+https://oulurepo.oulu.fi/handle/10024/43702 has DOI of publication in `DC.relation` field.
+
+
+#### Title mismatch
+
+DS-ABSKMA title matches https://doi.org/10.3161/150811013X678937
+
+#### Cites lots of BOLD datasets
+
+https://doi.org/10.1371/journal.pone.0116612 cites several datasets.
+
+
+## Limitations
+
+### DataCite DOIs after 2024 not included
+
+More recent DOIs will have been missed, for example, https://bdj.pensoft.net/article/149486/ has a DOI https://doi.org/10.5883/DS-MANGF that is not in this dataset.
+
+### Citations of datasets without DOIs aren’t counted
+
+From a comment on a blog post, this paper (https://doi.org/10.1163/15685381-bja10148) cites data that is not in my database. The datasets don’t have DOIs and hence weren’t included.
+
+> For the purposes of this study, we defined the Western Palearctic region as depicted in fig. 1, based on previous studies (Duellman and Trueb, 1986; Borkin, 1999; Borkin and Litvinchuk, 2013, 2014). We compiled a total of 1251 sequences, which are organised in BOLD projects DS-AMWPA and DS-AMWPC at www.boldsystems.org for Anura and Caudata, respectively, and includes 60 urodele species and 73 anuran species (belonging to 18 and 16 genera, respectively; supplementary table S1). DS-AMWPA includes 691 sequences, of which 525 (76%) were generated for this study and previously organised in separate BOLD subprojects managed by coauthors on this manuscript (ABAAP, ABCAP, AMWP, IMSAM, ZHABI), as well as 166 sequences (24%) mined from GenBank and other BOLD projects (GBAP, FBHER; supplementary table S2). DS-AMWPC includes 560 sequences, of which 452 (81%) were generated by our team and previously organised in separate BOLD subprojects (ABCAP, AMWP, IMSAM, ZHABI, CABM), as well as 108 sequences (19%) mined from GenBank and other BOLD projects (GBAP, FBHER; supplementary table S3). New sequences were obtained through sequenced DNA barcodes from the collection of tissue samples from different field projects and scientific collections. From the sequences mined from GenBank, we removed those sequences that clearly represent taxonomic misidentifications. Our sampling paid particular focus to the southern climatic refugia in the Western Palearctic (southern European peninsulas and Mediterranean ecosystems in North Africa and the Near East; fig. 1), which constitute biodiversity hotspots for this taxonomic group and in which most of the intraspecific diversity occurs. The taxonomic framework used followed Speybroeck et al. (2020) as a reference. For further details on species ranges and samples used in this reference library, see supplemental material.
+
+Examples of datasets (DS-*) that don’t have DOIs, but which are cited.
+
+| Dataset | Citing work |
+|--|--|
+| DS-AMWPA | 10.1163/15685381-bja10148 |
+| DS-AMWPC | 10.1163/15685381-bja10148 |
+| DS-COPAX1 | 10.70675/471d1db2z2d6cz47e1z9450z321b9d09527c |
+
 
 ### Matching based on title only
 
@@ -60,89 +143,21 @@ Hence, I searched CrossRef for a work with a title closely matching the name of 
 In some cases the database title registered with DataCite did not match that stored in BOLD, e.g. DS-ANTSP18 which in DataCite has the title “Ancient landscapes of the Namib Desert harbour high levels of genetic variability and deeply divergent lineages for Collembola” but is cited in the paper 10.3389/fevo.2019.00076 on Antarctic springtails.
 
 
-## Views
 
-### cited_work_doi
-
-List of unique DOIs of works that cite datasets.
-
-### matches_no_doi
-
-List of URLs for publications that lack DOIs
-
-### matches_not_in_cleaned
-
-Matches between dataset names and publications that are not in the `cleaned` table. This should be empty, so anything in this view should be checked and added to `cleaned`.
-
-### not_matched
-
-Datasets that have not been added to the `cleaned` table as they have no matches.
-
-## Output
-
-The table `dataset` represents the data for BOLD datasets. The table `cleaned` represents a mapping between those datasets and papers that publish and/or cite those datasets. If the value of `cleaned.accepted` is `Y` or starts with `Y` (e.g., `Y thesis`), then the match between dataset DOI and publication identifier is regarded as correct.
-
-### CSV files
-
-The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting publication DOIs, Handles, URNs, and URLs where they are available. To generate an updated file of citations:
-
-```
-php citations-to-csv.php > results/citations.csv
-```
-
-### Data Citation Corpus format
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15824274.svg)](https://doi.org/10.5281/zenodo.15824274)
-
-The file `data-citation-corpus.csv` contains the citations in the format required by the Data Citation Corpus, see https://docs.google.com/spreadsheets/d/18WyqWtOrM7L5K0ezImoiTR1U9edHJTFtQoFsE5b6BW4/edit?usp=sharing. This data is assembled in the table `data-citation-corpus` by a series of scripts:
-
-- `citations-to-data-citation-corpus.php` inserts the (dataset DOI, publication DOI) citation pairs, which are also the primary keys. This data comes from the `cleaned` table.
-- `csl-to-data-citation-corpus.php` adds data on the publications sourced by resolving the publication DOIs and retrieving CSL-JSON. For preprints I use the `institution` field rather than the publisher field. Most publication DOIs are from CrossRef and so have detailed information, but some come from other providers. One DOI does not resolve (Zenodo DOI used by BioOne).
-- `data-to-data-citation-corpus.php` adds information on the dataset sources from DataCite, such as title and subjects. BOLD datasets have no information on creator affiliations or funders.
-
-The dataset has been uploaded to Zenodo https://doi.org/10.5281/zenodo.15824274.
+## Experiments and future directions
 
 
-### Triples (see below on knowledge graph)
-
-## Examples
-
-### Searches that return the dataset instead of the citing work
-
-DS-KINA https://cir.nii.ac.jp/crid/1880865118193612416
-
-### Searches returning theses and preprints
-
-Some searches return thesis or preprints.
-
-https://edoc.ub.uni-muenchen.de/27000/ has a DOI for thesis in the body but not header.
-
-https://oulurepo.oulu.fi/handle/10024/43702 has DOI of publication in `DC.relation` field.
-
-### Related identifiers
-
-10.5061/dryad.rjdfn2z9b and 10.5883/DS-CHIRI are related (Dryad and BOLD). This information is in the metadata for the Dryad DOI.
-
-### Title mismatch
-
-https://bold-view-bf2dfe9b0db3.herokuapp.com/?recordset=DS-ABSKMA matches https://doi.org/10.3161/150811013X678937
-
-### Cites lots of BOLD datasets
-
-https://doi.org/10.1371/journal.pone.0116612
-
-
-## Knowledge graph
+### Knowledge graph
 
 In the folder `bkg` I experiment with exporting the citations to RDF and loading that into a simple SQLite table that has the columns `s`, `p`, and `o`, i.e. a triple. Putting a crude linked data fragment server in front of that means we can experiment with SPARQL queries.
 
 To fill out the data, I fetch CSL-JSON for the bibliographic DOIS and format it as simple RDF using the [schema.org](https://schema.org) vocabulary. I keep things simple by focusing on triples that link entities (e.g., papers to authors, funders, etc.) rather than aiming for a complete representation of the publications.
 
-### Preprints
+#### Preprints
 
 Note that CrossRef CSL-JSON includes information on whether an item is a pre-print or not, and it may have links to the published version of the work. I include these as `schema:seeAlso` links. 
 
-### Funding
+#### Funding
 
 Funding is modelled following examples from [Grant](https://schema.org/Grant). For example if we have no grant numbers we link direct to funder:
 
@@ -182,9 +197,9 @@ If we have a grant number then we can do something like this:
 
 Note that I use the funder DOIs directly as `@id`, rather than as `identifier`.
 
-### Queries
+#### Queries
 
-#### Papers and preprints
+##### Papers and preprints
 
 Link papers and preprints. Note that not all preprint DOIs are in the BOLD citations dataset, they may be simply mentioned in the CrossRef CSL-JSON I harvested for the papers. Hence we may lack titles for the preprints, so we enclosed the query for `:name` in `OPTIONAL`. 
 
@@ -203,7 +218,7 @@ OPTIONAL {
 } 
 ```
 
-#### Creators of a work
+##### Creators of a work
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -226,7 +241,7 @@ SELECT DISTINCT ?creator ?name WHERE {
 
 ```
 
-#### Funders of a work
+##### Funders of a work
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

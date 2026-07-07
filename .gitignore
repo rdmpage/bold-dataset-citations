@@ -7,6 +7,22 @@
 
 /bkg/env.php
 /bkg/junk/
+/bkg/*.log
+/bkg/*.nt
+/bkg/*.sql
+/bkg/*.sst
+/bkg/CURRENT
+/bkg/IDENTITY
+/bkg/LOCK
+/bkg/LOG
+/bkg/MANIFEST-*
+/bkg/OPTIONS-*
+
+
+/bold-sequence-bin-citations/
 
 boldcite.db-shm
 boldcite.db-wal
+
+/*.nt
+
