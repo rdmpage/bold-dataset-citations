@@ -12,7 +12,6 @@ $data = db_get($sql);
 
 $datasets = array();
 
-
 foreach ($data as $row)
 {
 	//print_r($row);
@@ -71,20 +70,20 @@ foreach ($data as $row)
 
 //print_r($datasets);
 
-echo "dataset,doi,handle,urn,url\n";
-
+echo "dataset,dataset_doi,doi,handle,urn,url\n";
 
 foreach ($datasets as $k => $v)
-{
-	$dataset = 'https://doi.org/10.5883/' . strtolower($k);
-	$dataset = $k;
-	
+{	
 	$num_rows = count($v->doi);
 	
 	for ($i = 0; $i < $num_rows; $i++)
 	{
 		$row = array(
-			$dataset,
+			// datset identifiers
+			$k,
+			'10.5883/' . strtolower($k),
+			
+			// bibliographic identifiers for citing works
 			$v->doi[$i],
 			$v->handle[$i],
 			$v->urn[$i],
@@ -93,8 +92,6 @@ foreach ($datasets as $k => $v)
 		
 		echo join(",", $row) . "\n";
 	}
-	
-	
 
 }
 

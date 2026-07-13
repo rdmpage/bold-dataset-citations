@@ -65,7 +65,7 @@ The table `dataset` represents the data for the BOLD datasets. The table `cleane
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21240015.svg)](https://doi.org/10.5281/zenodo.21240015)
 
-The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting publication DOIs, Handles, URNs, and URLs where they are available. To generate an updated file of citations:
+The file `citations-to-csv.php` generates a simple CSV file of the accepted citations, outputting datset ID and DOI, and publication DOIs, Handles, URNs, and URLs where they are available. To generate an updated file of citations:
 
 ```
 php citations-to-csv.php > results/citations.csv
