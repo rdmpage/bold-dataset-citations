@@ -564,9 +564,6 @@ DS-EBACAMPH,10.5883/ds-ebacamph,10.20944/preprints202106.0535.v1,,,https://www.p
 DS-EBACAVES,10.5883/ds-ebacaves,10.1371/journal.pone.0215505,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0215505
 DS-EBACAVES,10.5883/ds-ebacaves,10.3390/d13070292,,,https://www.mdpi.com/1424-2818/13/7/292
 DS-EBACAVES,10.5883/ds-ebacaves,10.20944/preprints202106.0535.v1,,,https://www.preprints.org/manuscript/202106.0535/download/final_file
-DS-EBACMAMM,10.5883/ds-ebacmamm,10.1371/journal.pone.0215505,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0215505
-DS-EBACMAMM,10.5883/ds-ebacmamm,10.3390/d13070292,,,https://www.mdpi.com/1424-2818/13/7/292
-DS-EBACMAMM,10.5883/ds-ebacmamm,10.20944/preprints202106.0535.v1,,,https://www.preprints.org/manuscript/202106.0535/download/final_file
 DS-EBACREPT,10.5883/ds-ebacrept,10.1371/journal.pone.0215505,,,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0215505
 DS-EBACREPT,10.5883/ds-ebacrept,10.3390/d13070292,,,https://www.mdpi.com/1424-2818/13/7/292
 DS-EBACREPT,10.5883/ds-ebacrept,10.20944/preprints202106.0535.v1,,,https://www.preprints.org/manuscript/202106.0535/download/final_file
@@ -1572,6 +1569,7 @@ DS-STREB1,10.5883/ds-streb1,10.37828/em.2022.58.2,,,https://vb.gamtc.lt/object/e
 DS-STRIG,10.5883/ds-strig,10.11646/zootaxa.5168.1.4,,,
 DS-STRINEUR,10.5883/ds-strineur,10.1093/zoolinnean/zlad070,,,
 DS-STYMACRO,10.5883/ds-stymacro,10.3390/d11020018,,,https://www.mdpi.com/1424-2818/11/2/18
+DS-SUBFAUNA,10.5883/ds-subfauna,10.1016/j.scitotenv.2025.181078,,,
 DS-SUBFAUNA,10.5883/ds-subfauna,10.1101/2024.09.20.613981,,,https://www.biorxiv.org/content/10.1101/2024.09.20.613981.abstract
 DS-SUBULA,10.5883/ds-subula,10.11646/zootaxa.4433.3.1,,,
 DS-SUDGRA,10.5883/ds-sudgra,10.11646/zootaxa.5529.1.1,,,
